@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit &amp; Request History</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-screen w-full flex-col overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-10 flex flex-col bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="flex items-center p-4 pb-2 justify-between border-b border-slate-200 dark:border-slate-800">
+<button class="text-slate-700 dark:text-slate-300 flex size-10 items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 rounded-full transition-colors">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</button>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">Audit &amp; Request History</h2>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto">
+<!-- SearchBar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-slate-500 dark:text-slate-400 flex border-none bg-white dark:bg-slate-800 items-center justify-center pl-4 rounded-l-xl" data-icon="MagnifyingGlass">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-white dark:bg-slate-800 placeholder:text-slate-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search by ID or Subject" value=""/>
+</div>
+</label>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar scroll-smooth">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-5 shadow-md">
+<p class="text-white text-sm font-semibold leading-normal">All History</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-slate-800 px-4 border border-slate-200 dark:border-slate-700">
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal">Status</p>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-slate-800 px-4 border border-slate-200 dark:border-slate-700">
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal">Last 30 Days</p>
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-slate-800 px-4 border border-slate-200 dark:border-slate-700">
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal">Action Type</p>
+<span class="material-symbols-outlined text-sm">filter_list</span>
+</button>
+</div>
+<!-- List Section: Today -->
+<div class="px-4 py-2">
+<p class="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-2 px-1">Today</p>
+<div class="space-y-3">
+<!-- Item 1: Success -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800 px-4 min-h-[80px] py-3 justify-between rounded-xl shadow-sm border border-slate-100 dark:border-slate-700/50">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-xl bg-green-500 shrink-0 size-12 shadow-sm" data-icon="CheckCircle">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Certificate Issued</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">ID: #8821 • User: j.doe_kisti</p>
+<p class="text-slate-400 dark:text-slate-500 text-[12px] mt-0.5">14:30 • Success</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center">
+<div class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Success</div>
+<span class="material-symbols-outlined text-slate-300 ml-2">chevron_right</span>
+</div>
+</div>
+<!-- Item 2: Pending -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800 px-4 min-h-[80px] py-3 justify-between rounded-xl shadow-sm border border-slate-100 dark:border-slate-700/50">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-xl bg-primary shrink-0 size-12 shadow-sm" data-icon="ArrowsClockwise">
+<span class="material-symbols-outlined">sync</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Renewal Approved</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">ID: #8819 • Grid Node B-12</p>
+<p class="text-slate-400 dark:text-slate-500 text-[12px] mt-0.5">09:15 • Processing</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center">
+<div class="bg-blue-100 dark:bg-primary/20 text-primary dark:text-primary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Pending</div>
+<span class="material-symbols-outlined text-slate-300 ml-2">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- List Section: Yesterday -->
+<div class="px-4 py-6">
+<p class="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-2 px-1">Yesterday</p>
+<div class="space-y-3">
+<!-- Item 3: Failed -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800 px-4 min-h-[80px] py-3 justify-between rounded-xl shadow-sm border border-slate-100 dark:border-slate-700/50">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-xl bg-red-500 shrink-0 size-12 shadow-sm" data-icon="Warning">
+<span class="material-symbols-outlined">gpp_maybe</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Revocation Request</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">ID: #8802 • Serial: 0x4f2a...</p>
+<p class="text-slate-400 dark:text-slate-500 text-[12px] mt-0.5">18:45 • Verification Failed</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center">
+<div class="bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Failed</div>
+<span class="material-symbols-outlined text-slate-300 ml-2">chevron_right</span>
+</div>
+</div>
+<!-- Item 4: Success -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800 px-4 min-h-[80px] py-3 justify-between rounded-xl shadow-sm border border-slate-100 dark:border-slate-700/50">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-xl bg-slate-400 shrink-0 size-12 shadow-sm" data-icon="Description">
+<span class="material-symbols-outlined">assignment_ind</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Identity Verified</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">ID: #8795 • RA Officer Approval</p>
+<p class="text-slate-400 dark:text-slate-500 text-[12px] mt-0.5">11:20 • Success</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center">
+<div class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Success</div>
+<span class="material-symbols-outlined text-slate-300 ml-2">chevron_right</span>
+</div>
+</div>
+<!-- Item 5: Success -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800 px-4 min-h-[80px] py-3 justify-between rounded-xl shadow-sm border border-slate-100 dark:border-slate-700/50">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-xl bg-amber-500 shrink-0 size-12 shadow-sm" data-icon="Send">
+<span class="material-symbols-outlined">send</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Request Submitted</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">ID: #8792 • New Host Cert</p>
+<p class="text-slate-400 dark:text-slate-500 text-[12px] mt-0.5">08:05 • Awaiting Review</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center">
+<div class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Success</div>
+<span class="material-symbols-outlined text-slate-300 ml-2">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pb-10 flex justify-center">
+<button class="text-primary text-sm font-semibold py-2 px-6 rounded-lg hover:bg-primary/10 transition-colors">
+                    Load Older Records
+                </button>
+</div>
+</main>
+<!-- iOS Bottom Tab Bar (Simulated) -->
+<footer class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 pb-8 pt-2">
+<div class="flex justify-around items-center">
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px]">Dashboard</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">card_membership</span>
+<span class="text-[10px]">Certs</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined font-bold">history</span>
+<span class="text-[10px] font-bold">History</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px]">Settings</span>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
