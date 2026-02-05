@@ -1,0 +1,2308 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<title>KISTI Grid Certificate Authority CP And CPS</title>
+<link rel="stylesheet" type="text/css" href="/style.css" />
+
+<style type='text/css'>
+a:link    { text-decoration:none; color:#990000; }
+a:visited { text-decoration:none; color:#990000; }
+a:hover   { text-decoration:underline; color:#333333; }
+body,td,pre {
+  color: black;
+  font-family: Arial,Verdana,Helvetica;
+  font-size: x-small;
+}
+</style>
+<style>
+p.L1  { font-size:14pt; font-weight:bold; margin:30 0 10 0px; }
+p.L2  { font-size:12pt; font-weight:bold; margin:20 0 10 5px; }
+p.L3  { font-size:10pt; font-weight:bold; margin:10 0 10 10px; }
+p.L1new  { font-size:14pt; font-weight:bold; margin:30 0 10 0px; color:red; }
+p.L2new  { font-size:12pt; font-weight:bold; margin:20 0 10 5px; color:red; }
+p.L3new  { font-size:10pt; font-weight:bold; margin:10 0 10 10px; color:red; }
+p.CL1 { font-size:12pt; font-weight:normal; margin:20 3 3 0px; }
+p.CL2 { font-size:11pt; font-weight:normal; margin:10 3 3 30px; }
+p.CL3 { font-size:10pt; font-weight:normal; margin:0 3 3 60px; }
+a.toc:link    { font-size:10pt; color:#dddddd; display:inline; margin:0 0 0 30px; }
+a.toc:visited { font-size:10pt; color:#dddddd; display:inline; margin:0 0 0 30px; }
+a.toc:hover   { font-size:10pt; color:#999999; display:inline; margin:0 0 0 30px; }
+a.rfc:link    { font-size:10pt; color:#dddddd; display:inline; margin:0 0 0 10px; }
+a.rfc:visited { font-size:10pt; color:#dddddd; display:inline; margin:0 0 0 10px; }
+a.rfc:hover   { font-size:10pt; color:#999999; display:inline; margin:0 0 0 10px; }
+p.text    { margin:0 0 0 20px; }
+p.textnew { margin:0 0 0 20px; color:red; line-height:130%; }
+ul.order { margin:5 0 5 40px; line-height:130%; }
+ul.ordernew { margin:5 0 5 40px; line-height:130%; color:red; }
+li.new { color:red; }
+</style>
+</head>
+<body>
+<table border='0' width='100%'>
+<tr>
+<td><img src='img/kisti.jpg'><br></td>
+<td align='right'><img src='img/apgridpma.jpg'><br></td>
+</tr>
+</table>
+<br>
+<center>
+<font size='+1'>
+<b>Korea Institute of Science and Technology Information (KISTI)<br/>
+Certificate Policy and Certification Practice Statement</b>
+</font>
+<br/>
+<br/>
+<font color='red'>
+Version 2.0 ( July 16, 2007 )<br>
+</font>
+<br>
+Korea Institute of Science and Technology Information (KISTI), Korea<br>
+</center>
+
+<hr size='1'>
+
+<a name='content'/>
+<b>Contents</b><br>
+<p class='CL2'><a href='#T1'>1. INTRODUCTION</a></p>
+<p class='CL2'><a href='#T2'>2. PUBLICATION AND REPOSITORY RESPONSIBILITIES</a></p>
+<p class='CL2'><a href='#T3'>3. IDENTIFICATION AND AUTHENTICATION</a></p>
+<p class='CL2'><a href='#T4'>4. CERTIFICATE LIFE-CYCLE OPERATIONAL REQUIREMENTS</a></p>
+<p class='CL2'><a href='#T5'>5. MANAGEMENT, OPERATIONAL, AND PHYSICAL CONTROLS</a></p>
+<p class='CL2'><a href='#T6'>6. TECHNICAL SECURITY CONTROLS</a></p>
+<p class='CL2'><a href='#T7'>7. CERTIFICATE, CRL, AND OCSP PROFILES</a></p>
+<p class='CL2'><a href='#T8'>8. COMPLIANCE AUDIT AND OTHER ASSESSMENT</a></p>
+<p class='CL2'><a href='#T9'>9. OTHER BUSINESS AND LEGAL MATTERS</a></p>
+
+<hr>
+<p class='CL1'><a name='#T1'><a href='#C1'>1. INTRODUCTION</a></p>
+<p class='CL2'><a name='#T1.1'><a href='#C1.1'>1.1. Overview</a></p>
+<p class='CL2'><a name='#T1.2'><a href='#C1.2'>1.2. Document Name and Identification</a></p>
+<p class='CL2'><a name='#T1.3'><a href='#C1.3'>1.3. PKI participants</a></p>
+<p class='CL2'><a name='#T1.4'><a href='#C1.4'>1.4. Certificate usage</a></p>
+<p class='CL2'><a name='#T1.5'><a href='#C1.5'>1.5. Policy administration</a></p>
+<p class='CL2'><a name='#T1.6'><a href='#C1.6'>1.6. Definitions and acronyms</a></p>
+
+<p class='CL1'><a name='#T2'><a href='#C2'>2. PUBLICATION AND REPOSITORY RESPONSIBILITIES</a></p>
+<p class='CL2'><a name='#T2.1'><a href='#C2.1'>2.1. Repositories</a></p>
+<p class='CL2'><a name='#T2.2'><a href='#C2.2'>2.2. Publication of certification information</a></p>
+<p class='CL2'><a name='#T2.3'><a href='#C2.3'>2.3. Time or frequency of publication</a></p>
+<p class='CL2'><a name='#T2.4'><a href='#C2.4'>2.4. Access controls on repositories</a></p>
+
+<p class='CL1'><a name='#T3'><a href='#C3'>3. IDENTIFICATION AND AUTHENTICATION</a></p>
+<p class='CL2'><a name='#T3.1'><a href='#C3.1'>3.1. Naming</a></p>
+<p class='CL2'><a name='#T3.2'><a href='#C3.2'>3.2. Initial identity validation</a></p>
+<p class='CL2'><a name='#T3.3'><a href='#C3.3'>3.3. Identification and authentication for re-key requests</a></p>
+<p class='CL2'><a name='#T3.4'><a href='#C3.4'>3.4. Identification and authentication for revocation request</a></p>
+<p class='CL1'><a name='#T4'><a href='#C4'>4. CERTIFICATE LIFE-CYCLE OPERATIONAL REQUIREMENTS</a></p>
+<p class='CL2'><a name='#T4.1'><a href='#C4.1'>4.1. Certificate Application</a></p>
+<p class='CL2'><a name='#T4.2'><a href='#C4.2'>4.2. Certificate application processing</a></p>
+<p class='CL2'><a name='#T4.3'><a href='#C4.3'>4.3. Certificate issuance</a></p>
+<p class='CL2'><a name='#T4.4'><a href='#C4.4'>4.4. Certificate acceptance</a></p>
+<p class='CL2'><a name='#T4.5'><a href='#C4.5'>4.5. Key pair and certificate usage</a></p>
+<p class='CL2'><a name='#T4.6'><a href='#C4.6'>4.6. Certificate renewal</a></p>
+<p class='CL2'><a name='#T4.7'><a href='#C4.7'>4.7. Certificate re-key</a></p>
+<p class='CL2'><a name='#T4.8'><a href='#C4.8'>4.8. Certificate modification</a></p>
+<p class='CL2'><a name='#T4.9'><a href='#C4.9'>4.9. Certificate revocation and suspension</a></p>
+<p class='CL2'><a name='#T4.10'><a href='#C4.10'>4.10. Certificate status services</a></p>
+<p class='CL2'><a name='#T4.11'><a href='#C4.11'>4.11. End of subscription</a></p>
+<p class='CL2'><a name='#T4.12'><a href='#C4.12'>4.12. Key escrow and recovery</a></p>
+
+<p class='CL1'><a name='#T5'><a href='#C5'>5. MANAGEMENT, OPERATIONAL, AND PHYSICAL CONTROLS</a></p>
+<p class='CL2'><a name='#T5.1'><a href='#C5.1'>5.1. Physical security controls</a></p>
+<p class='CL2'><a name='#T5.2'><a href='#C5.2'>5.2. Procedural controls</a></p>
+<p class='CL2'><a name='#T5.3'><a href='#C5.3'>5.3. Personnel security controls</a></p>
+<p class='CL2'><a name='#T5.4'><a href='#C5.4'>5.4. Audit logging procedures</a></p>
+<p class='CL2'><a name='#T5.5'><a href='#C5.5'>5.5. Records archival</a></p>
+<p class='CL2'><a name='#T5.6'><a href='#C5.6'>5.6. Key changeover</a></p>
+<p class='CL2'><a name='#T5.7'><a href='#C5.7'>5.7. Compromise and disaster recovery</a></p>
+<p class='CL2'><a name='#T5.8'><a href='#C5.8'>5.8. CA or RA termination</a></p>
+<p class='CL1'><a name='#T6'><a href='#C6'>6. TECHNICAL SECURITY CONTROLS</a></p>
+<p class='CL2'><a name='#T6.1'><a href='#C6.1'>6.1. Key pair generation and installation</a></p>
+<p class='CL2'><a name='#T6.2'><a href='#C6.2'>6.2. Private Key Protection and Cryptographic Module Engineering Controls</a></p>
+<p class='CL2'><a name='#T6.3'><a href='#C6.3'>6.3. Other aspects of key pair management</a></p>
+<p class='CL2'><a name='#T6.4'><a href='#C6.4'>6.4. Activation data</a></p>
+<p class='CL2'><a name='#T6.5'><a href='#C6.5'>6.5. Computer security controls</a></p>
+<p class='CL2'><a name='#T6.6'><a href='#C6.6'>6.6. Life cycle technical controls</a></p>
+<p class='CL2'><a name='#T6.7'><a href='#C6.7'>6.7. Network security controls</a></p>
+<p class='CL2'><a name='#T6.8'><a href='#C6.8'>6.8. Time-stamping</a></p>
+
+<p class='CL1'><a name='#T7'><a href='#C7'>7. CERTIFICATE, CRL, AND OCSP PROFILES</a></p>
+<p class='CL2'><a name='#T7.1'><a href='#C7.1'>7.1. Certificate profile</a></p>
+<p class='CL2'><a name='#T7.2'><a href='#C7.2'>7.2. CRL profile</a></p>
+<p class='CL2'><a name='#T7.3'><a href='#C7.3'>7.3. OCSP profile</a></p>
+
+<p class='CL1'><a name='#T8'><a href='#C8'>8. COMPLIANCE AUDIT AND OTHER ASSESSMENT</a></p>
+<p class='CL2'><a name='#T8.1'><a href='#C8.1'>8.1. Frequency or circumstances of assessment</a></p>
+<p class='CL2'><a name='#T8.2'><a href='#C8.2'>8.2. Identity/qualifications of assessor</a></p>
+<p class='CL2'><a name='#T8.3'><a href='#C8.3'>8.3. Assessor's relationship to assessed entity</a></p>
+<p class='CL2'><a name='#T8.4'><a href='#C8.4'>8.4. Topics covered by assessment</a></p>
+<p class='CL2'><a name='#T8.5'><a href='#C8.5'>8.5. Actions taken as a result of deficiency</a></p>
+<p class='CL2'><a name='#T8.6'><a href='#C8.6'>8.6. Communication of results</a></p>
+
+<p class='CL1'><a name='#T9'><a href='#C9'>9. OTHER BUSINESS AND LEGAL MATTERS</a></p>
+<p class='CL2'><a name='#T9.1'><a href='#C9.1'>9.1. Fees</a></p>
+<p class='CL2'><a name='#T9.2'><a href='#C9.2'>9.2. Financial responsibility</a></p>
+<p class='CL2'><a name='#T9.3'><a href='#C9.3'>9.3. Confidentiality of business information</a></p>
+<p class='CL2'><a name='#T9.4'><a href='#C9.4'>9.4. Privacy of personal information</a></p>
+<p class='CL2'><a name='#T9.5'><a href='#C9.5'>9.5. Intellectual property rights</a></p>
+<p class='CL2'><a name='#T9.6'><a href='#C9.6'>9.6. Representations and Warranties</a></p>
+<p class='CL2'><a name='#T9.7'><a href='#C9.7'>9.7. Disclaimers of warranties</a></p>
+<p class='CL2'><a name='#T9.8'><a href='#C9.8'>9.8. Limitations of liability</a></p>
+<p class='CL2'><a name='#T9.9'><a href='#C9.9'>9.9. Indemnities</a></p>
+<p class='CL2'><a name='#T9.10'><a href='#C9.10'>9.10. Term and termination</a></p>
+<p class='CL2'><a name='#T9.11'><a href='#C9.11'>9.11. Individual notices and communications with participants</a></p>
+<p class='CL2'><a name='#T9.12'><a href='#C9.12'>9.12. Amendments</a></p>
+<p class='CL2'><a name='#T9.13'><a href='#C9.13'>9.13. Dispute resolution provisions</a></p>
+<p class='CL2'><a name='#T9.14'><a href='#C9.14'>9.14. Governing law</a></p>
+<p class='CL2'><a name='#T9.15'><a href='#C9.15'>9.15. Compliance with applicable law</a></p>
+<p class='CL2'><a name='#T9.16'><a href='#C9.16'>9.16. Miscellaneous provisions</a></p>
+<p class='CL2'><a name='#T9.17'><a href='#C9.17'>9.17. Other provisions</a></p>
+
+
+<hr size='1'>
+
+<a name='C1'/>
+<p class='L1'>1. Introduction<a href='#T1' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.1.' class='rfc'>[RFC3647]</a>
+</p>
+
+<a name='C1.1'/>
+<p class='L2'>1.1. Overview<a href='#T1.1' class='toc'>[Content]</a></p>
+<ul class='order'>
+<li class=''>This document is structured according to the <a href='rfc3647.html'>RFC3647</a>
+ (RFC3647 obsolete <a href='rfc2527.html'>RFC2527</a>).
+<li class=''>Not all sections of RFC3647 are used. Sections that are not included have a default value of "No stipulation."
+<li>This document describes the set of rules and procedures established by the Korea Institute of Science and Technology Information Certificate Authority (KISTI GRID CA) for the operations of the KISTI GRID <a href='#glossary_101'>PKI</a> service.
+<li>This document will include both the Certificate Policy and the Certificate Practice Statement for the KISTI GRID PKI which is a traditional X.509 Public Key Certificate Authority that complies with the "Profile for a traditional X.509 Public Key Certificate Authorities with secure infrastructure"<sup>*</sup> of IGTF.<br>
+<sup>*</sup> http://www.eugridpma.org/guidelines/IGTF-AP-classic-20050930-4-0.html
+<li>An intent of the KISTI GRID CA PKI is to issue identity and service certificates for use in grid. 
+</ul>
+
+<a name='C1.2'/>
+<p class='L2'>1.2. Document Name and Identification<a href='#T1.2' class='toc'>[Content]</a></p>
+<p class='text'>
+<ul class='order'>
+<li>
+ Document title:<br>
+ <b>KISTI GRID CA Certificate Policy and Certification Practice Statement</b>
+</li>
+
+<li>Document version: <b>2.0</b></li>
+
+<li class=''>Document date: <b>July 16, 2007</b></li>
+
+<li>
+ OID:<br>
+ The following ASN.1 Object Identifier (OID) has been assigned to this document: <b>1.3.6.1.4.1.14305.1.1.1.2.0</b><br>
+ This OID is constructed as shown in the table below:<br>
+<br>
+<table border='1' cellpadding='1' cellspacing='1'>
+<tr>
+  <td>IANA</td>
+  <td>1.3.6.1.4.1</td>
+</tr><tr>
+  <td>KISTI(Korea Institute of Science and Technology Information)</td>
+  <td>.14305</td>
+</tr><tr>
+  <td>KISTI Supercomputing Center</td>
+  <td>.1</td>
+</tr><tr>
+  <td>KISTI GRID CA</td>
+  <td>.1</td>
+</tr><tr>
+  <td>CP/CPS</td>
+  <td>.1</td>
+</tr><tr>
+  <td>Major Version</td>
+  <td>.2</td>
+</tr><tr>
+  <td>Minor Version</td>
+  <td>.0</td>
+</tr>
+</table>
+</li>
+</ul>
+</p>
+
+
+<a name='C1.3'/>
+<p class='L2'>1.3. PKI Participants<a href='#T1.3' class='toc'>[Content]</a></p>
+
+<a name='C1.3.1'/>
+<p class='L3'>1.3.1. Certification Authority</p>
+<p class='text'>
+The KISTI GRID CA does not issue certificates to subordinate certification authorities. 
+</p>
+
+<a name='C1.3.2'/>
+<p class='L3'>1.3.2. Registration Authorities</p>
+<p class='text'>
+The KISTI GRID CA delegates the authentication of individual identity to Registration Authorities (RA). RAs must sign an agreement with the KISTI GRID CA, stating their adherence to the procedures described in this document. RAs are not allowed to issue certificates under this CP/CPS.
+The following is the KISTI GRID RA registration procedure:
+<ul class='order'>
+ <li>RA candidate must accept the CP/CPS and agree to all RA responsibilities.
+ <li>RA candidate must be an employee of the institution or organization and provide work ID or proof of work.
+ <li>Complete the RA application form and fax it to KISTI GRID CA.
+ <li>Send a verification e-mail to KISTI GRID CA.
+ <li>KISTI GRID CA will then arrange face-to-face or online-video meeting with the RA candidate.
+ <li>After completing the request, KISTI GRID CA will publish the RA contact information on KISTI GRID CA website.
+</ul>
+</p>
+
+
+<a name='C1.3.3'/>
+<p class='L3'>1.3.3. Subscribers (End Entities)</p>
+<p class='text'>
+The KISTI GRID PKI issues person, host and service certificates to members of KISTI and other individuals working on
+</p>
+<ul class='order'>
+ <li>Grid projects in collaboration with KISTI
+ <li>Programs involved in KISTI supercomputing research
+ <li>LCG/EGEE-related projects/programs in Korea
+ <li>International or domestic collaboration in Grid computing area
+</ul>
+<p class='text'>
+The term end entity is used to refer to the holder of the private key. For a person certificate it will be the subscriber, but for a host or service certificate the end entity may be some process running on a machine.
+</p>
+<p class='text'>
+<br>
+The subscriber is required to:<br>
+- read and adhere to the procedures published in this document.<br>
+- generate a key pair using a trustworthy method. <br>
+- take reasonable precautions to prevent any loss, disclosure or unauthorized use of the private key associated with the certificate, including:<br>
+<ul class='order'>
+ <li>for user certificates 
+ <ul class='order'>
+  <li>selecting a pass phrase of at minimum 12 characters 
+  <li>protecting the pass phrase from others 
+  <li>always using the pass phrase to encrypt the stored private key 
+  <li>never sharing the private key with other users 
+ </ul>
+ <li>for host/service certificates 
+ <ul class='order'>
+  <li>storing them encrypted whenever possible 
+  <li>provide correct information and authorize the publication of the certificate. 
+  <li>use the certificates for the permitted uses only. 
+ </ul>
+</ul>
+</p>
+
+<a name='C1.3.4'/>
+<p class='L3'>1.3.4 Relying parties</p>
+<p class='text'>
+KISTI GRID CA's relying parties includes the following:<br>
+- Employees of KISTI or research institutes in Korea<br>
+- Employees of international research institutes which collaborate with KISTI in Grid computing area.<br>
+- Resource-sharing organizations with KISTI Supercomputing Center<br>
+<br>
+Relying parties' obligations are as follows:<br>
+- Must read the procedures published by the KISTI GRID CA.<br>
+- Must use the certificates for the permitted uses only.<br>
+- Must notify KISTI GRID CA of any security incidents. (Notification shall occur within the first 12 hours of initial knowledge of incident.)<br>
+- May verify that the certificate is not on the CRL before validating a certificate.<br>
+</p>
+
+<a name='C1.3.5'/>
+<p class='L3'>1.3.5  Other participants</p>
+<p class='text'>
+No stipulation.
+</p>
+
+
+<a name='C1.4'/>
+<p class='L2'>1.4. Certificate Usage<a href='#T1.4' class='toc'>[Content]</a></p>
+
+<a name='1.4.1'/>
+<p class='L3'>1.4.1. Appropriate certificate uses</p>
+<p class='text'>
+Certificates from KISTI GRID CA may be used
+in applications for the following purposes:
+</p>
+<ul class='order'>
+<li class='new'><strike>Information publication</strike>
+<li class='new'><strike>Application work-flow</strike>
+<li>Grid middleware
+</ul>
+<p class='text'>
+Certificates may also be used to satisfy other general or specific
+ requirements of Grid computing.<br>
+</p>
+
+<a name='1.4.2'/>
+<p class='L3'>1.4.2. Prohibited certificate uses</p>
+
+<font color=''>Certificates issued by the CA <font color='red'><strike>shall not</strike> must not</font> be used for:</font>
+
+<ul class='order'>
+<li>Electronic commerce. 
+<li>Any application requiring fail-safe performance, including those associated with, but not limited to:
+ <ul class='order'>
+ <li>The operation of nuclear facilities; 
+ <li>Air traffic control systems; 
+ <li>Aircraft navigation systems; 
+ <li>Hospital life support systems; 
+ <li>Municipal water treatment plants; 
+ <li>Weapons control systems; or 
+ <li>Any other system whose failure could lead to injury, death, damage to property or environmental damage. 
+ </ul>
+<li>Transactions where applicable law prohibits the use of digital signatures for such transactions or where otherwise prohibited by law; or 
+<li>Unless supported by other appropriate security mechanisms and procedural safeguards, the protection of:
+ <ul class='order'>
+ <li>Information that, if compromised, could cause extremely grave injury outside the national interest; or 
+ <li>Classified information. 
+ </ul>
+</ul>
+
+<a name='C1.5'/>
+<p class='L2'>1.5. Policy Administration<a href='#T1.5' class='toc'>[Content]</a></p>
+
+<a name='C1.5.1'/>
+<p class='L3'>1.5.1. Organization administering the document</p>
+<p class='text'>
+KISTI GRID CA is managed by Grid Technology Research Team, KISTI.
+</p>
+
+<p class='L3'>1.5.2. Contact person</p>
+<p class='text'>
+For inquiries regarding this document or the KISTI GRID PKI service in general, please contact:<br>
+<br>
+<i>Sangwan Kim</i><br>
+Grid Technology Research Team, KISTI<br>
+52 Eoeun-dong, Yusung-gu, Daejeon, 305-806 Korea<br>
+Phone:	+82-42-869-0568<br>
+Fax:	+82-42-869-0599<br>
+Email:	 ca@gridcenter.or.kr or sangwan@kisti.re.kr<br>
+<br>
+<i>Soonwook Hwang</i><br>
+Grid Technology Research Team, KISTI<br>
+52 Eoeun-dong, Yusung-gu, Daejeon, 305-806 Korea<br>
+Phone:	+82-42-869-0647<br>
+Fax:	+82-42-869-0599<br>
+Email:	ca@gridcenter.or.kr or hwang@kisti.re.kr<br>
+</p>
+<p class='L3'>1.5.3. Person determining CPS suitability for the policy</p>
+<p class='text'>
+See Section 1.5.2.
+</p>
+
+<p class='L3'>1.5.4. CPS approval procedures</p>
+<p class='text'>
+The KISTI GRID CA is responsible for the CP and CPS.<br>
+For the global grid collaboration, KISTI GRID CA is a member of APGrid PMA and IGTF.<br>
+Major changes must be approved by the APGrid PMA community.<br>
+Minor changes can be done by KISTI GRID CA staff, and should be notified through the APGrid PMA mailing list.<br>
+</p>
+
+
+
+<a name='C1.6'/>
+<p class='L2'>1.6. Definitions and Acronyms<a href='#T1.6' class='toc'>[Content]</a></p>
+
+<p class='text'>
+<u>Certification authority (CA)</u><br/>
+An authority trusted by one or more
+users to create and assign public key certificates. Optionally the CA
+may create the user's keys. The CA is responsible for the public key
+certificates during their whole lifetime, not just for issuing them.
+<br/><br/>
+
+<u>CA certificate</u><br/>
+A certificate for one CA's public key issued by another CA.
+<br/><br/>
+
+<u>Certificate policy (CP)</u><br/>
+A named set of rules that indicates the
+applicability of a certificate to a particular community or class of
+application with common security requirements. For example, a
+particular certificate policy might indicate applicability of a type of
+certificate to the authentication of electronic data interchange
+transactions for the trading of goods within a given price range.
+<br/><br/>
+
+<u>Certification path</u><br/>
+An ordered sequence of certificates that, together
+with the public key of the initial object in the path, can be processed
+to obtain that of the final object in the path.
+<br/><br/>
+
+<u>Certification practice statement (CPS)</u><br/>
+A statement of the practices
+that a certification authority employs in issuing certificates.
+<br/><br/>
+
+<u>Certificate revocation list (CRL)</u><br/>
+A time stamped list identifying
+revoked certificates, which is signed by a CA and made freely available
+in a public repository.
+<br/><br/>
+
+<u>Issuing certification authority (issuing CA)</u><br/>
+The CA that issues the
+certificate (see also Subject certification authority).
+<br/><br/>
+
+<u>Public key certificate (PKC)</u><br/>
+A data structure containing the public
+key of an end entity and some other information, which is digitally
+signed with the private key of the CA that issued it.
+<br/><br/>
+
+<a name='glossary_101'/>
+<u>Public Key Infrastructure (PKI)</u><br/>
+The set of hardware, software,
+people, policies and procedures needed to create, manage, store,
+distribute, and revoke PKCs based on public key cryptography.
+<br/><br/>
+
+<u>Registration authority (RA)</u><br/>
+An entity that is responsible for
+identification and authentication of certificate subjects but that does
+not sign or issue certificates (i.e., an RA is delegated certain tasks
+on behalf of a CA). The term Local Registration Authority (LRA) is used
+elsewhere for the same concept.
+<br/><br/>
+
+<u>Relying party</u><br/>
+A recipient of a certificate who acts in reliance on
+that certificate or on digital signatures verified using that
+certificate. In this document, the terms "certificate user" and
+"relying party" are used interchangeably.
+<br/><br/>
+
+<u>Subject certification authority (subject CA)</u><br/>
+In the context of a
+particular CA-certificate, the subject CA is the CA whose public key is
+certified in the certificate.
+</p>
+
+
+<a name='C2'/>
+<p class='L1'>2. Publication and Repository Responsibilities<a href='#T2' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.2.' class='rfc'>[RFC3647]</a>
+</p>
+
+<a name='C2.1'/>
+<p class='L2'>2.1. Repositories<a href='#T2.1' class='toc'>[Content]</a></p>
+<ul class='order'>
+ <li>The KISTI GRID CA online repository is available at http://ca.gridcenter.or.kr/
+</ul>
+
+<a name='C2.2'/>
+<p class='L2'>2.2. Publication of certification information<a href='#T2.2' class='toc'>[Content]</a></p>
+<p class='text'>
+KISTI GRID CA publishes the following information through its online repository (web site http://ca.gridcenter.or.kr/).
+</p>
+<ul class='order'>
+ <li>KISTI GRID CA's root certificate
+ <li>End entity certificates issued by the KISTI GRID CA
+ <li>CRLs(Certificate Revocation List) issued by KISTI GRID CA
+ <li>KISTI GRID CA's signing policy
+ <li>A copy of this Policy (CP/CPS)
+ <li>All  the CP/CPS under which valid certificates are issued
+ <li>Other information relevant to the KISTI GRID PKI
+</ul>
+
+
+<a name='C2.3'/>
+<p class='L2'>2.3. Time or frequency of publication<a href='#T2.3' class='toc'>[Content]</a></p>
+<ul class='order'>
+ <li>Certificates must be published as soon as issued.
+ <li>CRLs will be published as soon as issued or refreshed on scheduled update
+ <li>All KISTI GRID PKI documents will be published to the online repository as they are updated.
+</ul>
+
+
+<a name='C2.4'/>
+<p class='L2'>2.4. Access controls on repositories<a href='#T2.4' class='toc'>[Content]</a></p>
+<ul class='order'>
+ <li>The online repository is available on a substantially 24/7 basis, subject to reasonable scheduled maintenance.
+ <li>The KISTI GRID CA does not impose any access control on the information described in <a href='#C2.1.1'>section 2.1.1</a>.
+</ul>
+
+
+<a name='C3'/>
+<p class='L1'>3. Identification and Authentication<a href='#T3' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.3.' class='rfc'>[RFC3647]</a>
+</p>
+
+<a name='C3.1'/>
+<p class='L2'>3.1. Naming<a href='#T3.1' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.3.1.' class='rfc'>[RFC3647]</a>
+</p>
+
+<a name='3.1.1'/>
+<p class='L3'>3.1.1. Types of names</p>
+<p class='text'>
+Identification of certificates will be according to X.500 distinguished name. (RFC2459)<br>
+The DN must be in the form of a X.501 printable string and must not be blank.<br>
+<br>
+The following table shows attribute values for name.<br>
+Both the Organization Name 3 and Common Name are decided based on the data provided by subscribers when requesting certificates.<br>
+<br>
+<style>
+td.a1 { text-align:center; background-color:#ffffff; font-weight:bold; }
+td.b1 { text-align:center; background-color:#ffffff; font-weight:normal; }
+</style>
+<table border='1' cellpadding='1' cellspacing='1'>
+<tr>
+  <td class='a1'>attributes</td>
+  <td class='a1'>meaning</td>
+  <td class='a1'>value</td>
+</tr><tr>
+  <td class='b1'>countryName</td>
+  <td class='b1'>Country name</td>
+  <td class='b1'>KR</td>
+</tr><tr>
+  <td class='b1'>organizationName</td>
+  <td class='b1'>Organization Name 1</td>
+  <td class='b1'>KISTI</td>
+</tr><tr>
+  <td class='b1'>organizationName</td>
+  <td class='b1'>Organization Name 2</td>
+  <td class='b1'>GRID</td>
+</tr><tr>
+  <td class='b1'>organizationName</td>
+  <td class='b1'>Organization Name 3</td>
+  <td class='b1' rowspan='3'>Based on application information</td>
+</tr><tr>
+  <td class='b1' rowspan='2'>commonName</td>
+  <td class='b1'>User name(client certificate)</td>
+</tr><tr>
+  <td class='b1'>Host name(host certificate)</td>
+</tr>
+</table>
+<br>
+</p>
+
+<a name='3.1.2'/>
+<p class='L3'>3.1.2. Need for names to be meaningful</p>
+<p class='text'>
+The Subject Name in a certificate MUST have a reasonable association with the End Entity.<br>
+Each host certificate must be linked to a single network entity.<br>
+The common name of the host certificate must be the FQDN of the host.<br>
+</p>
+
+<a name='3.1.3'/>
+<p class='L3'>3.1.3. Anonymity or pseudonymity of subscribers</p>
+<p class='text'>
+The subscribers can not be anonymous or pseudonymous.
+</p>
+
+<a name='3.1.4'/>
+<p class='L3'>3.1.4. Rules for interpreting various name forms</p>
+<p class='text'>
+See Section 3.1.1.
+</p>
+
+<a name='3.1.5'/>
+<p class='L3'>3.1.5. Uniqueness of names</p>
+<ul class='order'>
+ <li>The Distinguished Name(DN) must be assigned unique among certificates issued by the KISTI GRID CA.
+ <li>For user certificates each CN component will include the full name of the subscriber.
+   The registration interface appends 8 random alphanumeric characters in front of the name
+   (i.e. "12345678 Gil-Dong Hong") when constructing the common name for uniqueness.
+</ul>
+
+
+<a name='3.1.6'/>
+<p class='L3'>3.1.6. Recognition, authentication, and role of trademarks</p>
+<p class='text'>No Stipulation</p>
+
+<a name='C3.1.6'/>
+<p class='L3'>3.1.6. Recognition, authentication and role trademarks</p>
+<p class='text'>No Stipulation</p>
+
+<!--
+<a name='C3.1.7'/>
+<p class='L3'>3.1.7. Method to prove possession of private key</p>
+<p class='text'>
+KISTI GRID CA confirms the possession of a private key by verification of the CSR signature.
+</p>
+
+<a name='C3.1.8'/>
+<p class='L3'>3.1.8. Authentication of organization identity</p>
+<p class='text'>
+If the name of an organization is requested to be part of subject name, the KISTI GRId CA may take steps to ascertain that the organization consent to such use.
+</p>
+-->
+
+
+<a name='C3.2'/>
+<p class='L2'>3.2. Initial Identity Validation<a href='#T3.2' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.3.2.' class='rfc'>[RFC3647]</a>
+</p>
+
+<a name='3.2.1'/>
+<p class='L3'>3.2.1. Method to prove possession of private key</p>
+<p class='text'>
+KISTI GRID CA confirms the possession of a private key by verification of the CSR signature.
+</p>
+
+<a name='3.2.2'/>
+<p class='L3'>3.2.2. Authentication of organization identity</p>
+<p class='text'>
+The KISTI GRID CA verifies the identity of organizations by checking that the organization is known to the grid computing communities.
+</p>
+
+<a name='3.2.3'/>
+<p class='L3'>3.2.3. Authentication of individual identity</p>
+<ul class='order'>
+ <li>User: A person who requests a user certificate will
+   be identified by in person interview with the RA.
+   A photo ID card with a photo image on it must be presented at the interview.
+ <li>Host or Service certificate: Requests must be authorized as a legal subscriber of the CA
+<font color='red'>
+and RA's approval is required before issuing host/service certificates
+for a proof of the subscriber's title of the host/service FQDN.
+</font>
+</ul>
+
+<a name='3.2.4'/>
+<p class='L3'>3.2.4. Non-verified subscriber information</p>
+<p class='text'>No Stipulation</p>
+
+<a name='3.2.5'/>
+<p class='L3'>3.2.5. Validation of authority</p>
+<p class='text'>No Stipulation</p>
+
+<a name='3.2.6'/>
+<p class='L3'>3.2.6. Criteria for interoperation</p>
+<p class='text'>No Stipulation</p>
+
+<a name='C3.3'/>
+<p class='L2'>3.3. Identification and Authentication for Re-key Requests
+  <a href='#T3.3' class='toc'>[Content]</a>
+  <a href='rfc3647.html#s4.3.3.' class='rfc'>[RFC3647]</a>
+</p>
+
+<a name='3.3.1'/>
+<p class='L3'>3.3.1. Identification and authentication for routine re-key</p>
+<p class='text'>
+This is covered by <a href='#C4.7.2'>Section 4.7.2</a>.
+</p>
+<br>
+
+<a name='3.3.2'/>
+<p class='L3'>3.3.2. Identification and authentication for re-key after revocation</p>
+<p class='text'>
+Rekey after revocation follows the same rules as an initial registration.
+</p>
+
+
+<a name='C3.4'/>
+<p class='L2'>3.4. Identification and Authentication for Revocation Requests<a href='#T3.4' class='toc'>[Content]</a></p>
+<p class='textnew'>
+<strike>
+Contact personally the KISTI GRID CA or an authorized RA in order to verify his/her identity and the validity of the request.<br>
+</strike>
+Contact the KISTI GRID CA or an authorized RA using e-mail or telephone
+in order to verify his/her identity and the validity of the request.
+</p>
+
+
+
+<a name='C4'/>
+<p class='L1'>4. Certificate Life-Cycle Operational Requirements<a href='#T4' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.' class='rfc'>[RFC3647]</a></p>
+<a name='C4.1'/>
+<p class='L2'>4.1. Certificate Application<a href='#T4.1' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.1.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+Enrollment Process is as follows:
+</p>
+<ul class='order'>
+ <li>A user who requests a user certificate must have a face-to-face meeting with the RA and present a user application form to the RA. (The application form is available from the KISTI GRID CA web site).
+ <li>The RA examines the request according to <a href='#C3.2'>section 3.2</a>.
+ <li>Once the user is identified, the RA will give a PIN (Personal Identification Number) to him/her, having him/her write down the PIN on the application form, and finally put
+ the RA's signature on the user application form.
+ (The PIN is to be used later on as a passphrase of WACC, which is required
+  for online certificate reqeust)
+ <li>The user will fax the application form to the CA.
+ <li>Upon receipt of the application form, the CA will have a contact with the RA who signed the application form, making sure that the RA has really signed it. The CA can contact the RA via e-mail or telephone.
+ <li>If the application form is approved, the KISTI GRID CA will inform the user of the fact that the application form has been approved by sending him a web-access client certificate (WACC) which gives him/her an authority to access the online certificate request web site.
+ <li>Using the PIN given by the RA as a passphrase,
+ the user will be able to import the WACC in his/her web browser.
+</ul>
+
+<p class='text'>
+<br>
+Certificate application process is as follows:
+</p>
+
+<ul class='order'>
+ <li>Once the WACC properly is imported into his/her web browser, the user
+   is able to access the online certificate request web site to make
+   certificate request by an online procedure.
+ <li>For the online procedure, the user should do the following:
+ <ul class='order'>
+  <li>Visit the KISTI online certificate request web site.
+  <li>Upload a CSR (certificate signing request) which contains the public
+    key that is to be generated by the user.
+  <li>Send the CA an e-mail to let the CA know that he/she has uploaded a CSR
+  <li>Wait for the certificate issuance
+ </ul>
+ <li>Subscribers can generate a CSR for user certificate using following means:
+ <ul>
+  <li>Using OpenSSL or equivalent software
+  <li>Using CSR generation service provided by KISTI CA in the certificate request web site
+ </ul>
+ <li>Host/service certificate request is the same as the user certificate request case.
+  To request a host/service certificate requset, the subscriber must access
+  the online certificate request
+  web site of KISTI CA,
+  <font color='red'>
+<strike>
+ which requires the same enrollment process.</strike>
+ which requires an enrollment process if the subscriber have no WACC.
+</font>
+<font color='red'>
+But, for the certificate application process of host/service certificates,
+RA's approval is required before issuing host/service certificates
+for a proof of the subscriber's title of the host/service FQDN.
+</font>
+</ul>
+
+<!--
+<a name='4.1.1'/>
+<p class='L3'>4.1.1. Who can submit a certificate application</p>
+<a name='4.1.2'/>
+<p class='L3'>4.1.2. Enrollment process and responsibilities</p>
+-->
+
+<a name='C4.2'/>
+<p class='L2'>4.2. Certificate Application Processing<a href='#T4.2' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.2.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C4.2.1'/>
+<p class='L3'>4.2.1. Performing identification and authentication functions</p>
+<p class='text'>
+KISTI GRID CA ensures that the followings in the enrollment process
+  and certificate application process:<br>
+<br>
+In the enrollment process, the CA checks if<br>
+- the application form is correct; and<br>
+- the PIN number in the application form is correspond with the RA's generated number in the previous section; and<br>
+- the RA examined the subscriber in a face-to-face meeting or an equivalent inspection process, if required.<br>
+<br>
+In the certificate application process, the CA checks if<br>
+- the certificate request is done in accordance with the process in this document especially in the <a href='#C4.1'>section 4.1</a>.<br>
+- the certificate request subject name has correct format; and<br>
+- the key length of the certificate request meets the requirement.<br>
+</p>
+
+<a name='4.2.2'/>
+<p class='L3'>4.2.2. Approval or rejection of certificate applications</p>
+<p class='text'>
+- The issuance of a certificate by the CA indicates a complete and final approval of the certificate application by the CA.<br>
+- If any condition specified in section 4.2.1 is not be satisfied, the certificate application is rejected and the CA notifies to the subscriber with the reason of the rejection.<br>
+</p>
+
+<a name='4.2.3'/>
+<p class='L3'>4.2.3. Time to process certificate applications</p>
+<p class='text'>
+- The CA should process the certificate application
+  within 2 business day from the acceptance of the certificate request.
+</p>
+
+
+<a name='C4.3'/>
+<p class='L2'>4.3. Certificate Issuance<a href='#T4.3' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.3.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+ <li class=''>Upon the receipt of CSR, KISTI CA operator will store the CSR
+ in a memory stick and take it to the KISTI signing machine which is kept
+ off-line as described in <a href='#C6.7'>section 6.7</a>, 
+ <li class=''>The CA operator generates(issues) user certificate containing
+ user public key with CA signature and hand-carrying it to the online public
+ web server.
+ <li class=''>A notification message is sent to the e-mail address of the subject
+ with the instructions on how to download it from the online public web server. 
+ <li class=''>The user will be able to download his/her user certificate.
+ For this secure HTTP connection is required.
+ <li class=''>If the authentication is unsuccessful, the certificate is not issued
+ and an e-mail with the reason is sent to the subject.
+</ul>
+
+<!--
+<a name='4.3.1'/>
+<p class='L3'>4.3.1. CA actions during certificate issuance</p>
+<a name='4.3.2'/>
+<p class='L3'>4.3.2. Notification to subscriber by the CA of issuance of certificate</p>
+-->
+
+<a name='C4.4'/>
+<p class='L2'>4.4. Certificate Acceptance<a href='#T4.4' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.4.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+ <li class=''>If the issued certificate has any problem, the subscriber
+ should notify the CA that he can not accept the issued certificate with
+ a proper reason within 7 days from issuance of the certificate.
+ <li class=''>Unaccepted certificate should be revoked and the certificate should be re-issued.
+</ul>
+
+<!--
+<a name='4.4.1'/>
+<p class='L3'>4.4.1. Conduct constituting certificate acceptance</p>
+<a name='4.4.2'/>
+<p class='L3'>4.4.2. Publication of the certificate by the CA</p>
+<a name='4.4.3'/>
+<p class='L3'>4.4.3. Notification of certificate issuance by the CA to other entities</p>
+-->
+
+
+<a name='C4.5'/>
+<p class='L2'>4.5. Key Pair and Certificate Usage<a href='#T4.5' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.5.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+<li>KISTI GRID certificates may be used for any software for grid computing.
+<li>They could be used in other capacities, but the KISTI GRID CA does not
+  recommend or warrant any other use of the certificates it signs.
+<li>User certificates must not be shared beteen multiple people.
+<li>Host certificates must be linked to a single network entity.
+<li class=''>The subscriber must manage his certificates and private keys securely.
+ To protect the private key the subscriber must encrypt his private with a pass phrase.
+ The pass phrase should be more than 12 characters long.
+</ul>
+
+<!--
+<a name='4.5.1'/>
+<p class='L3'>4.5.1. Subscriber private key and certificate usage</p>
+<a name='4.5.2'/>
+<p class='L3'>4.5.2. Relying party public key and certificate usage</p>
+-->
+
+<a name='C4.6'/>
+<p class='L2'>4.6. Certificate Renewal<a href='#T4.6' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.6.' class='rfc'>[RFC3647]</a></p>
+
+<a name='4.6.1'/>
+<p class='L3'>4.6.1. Circumstance for certificate renewal</p>
+<p class='text'>
+- Certificate renewal means the issuance of a new certificate to the subscriber
+ without changing information in the certificate before
+ expiration of the certificate. There are two possible cases:<br>
+</p>
+<ul class='order'>
+<li>Renew a certificate with the same key:<br>
+ <ul class='order'>
+  <li>
+      KISTI GRID CA does not permit certificate signing request
+      with the same key as the previous certificate.<br>
+ </ul>
+<li>Renew a certificate with a new key.<br>
+ <ul class='order'>
+  <li>The subscriber should make a new CSR for his/her EE,
+      to apply to renew a certificate of the EE.<br>
+ </ul>
+</ul>
+<p class='text'>
+- A subscriber may only apply to renew his/her certificate within one (1) month prior to the expiration
+of the EE certificate.
+</p>
+
+
+<a name='4.6.2'/>
+<p class='L3'>4.6.2. Who may request renewal</p>
+<p class='text'>
+- A subscriber can request renewal of his/her EE(user or host) certificates.
+</p>
+
+<a name='4.6.3'/>
+<p class='L3'>4.6.3. Processing certificate renewal requests</p>
+<p class='text'>
+- The process of certificate renewal request processing is basically the same as
+  the initial certificate application in <a href='#C4.1'>section 4.1</a>.<br>
+<font color='red'>
+- If a subscriber apply to renew his/her EE certificate prior to the expiration
+  of the EE certificate, CA operator should revoke the privious EE certificate
+  within 1 week after issuing the new certificate but not after the expiration
+  time of the old certificate.<br>
+<strike>
+- If a subscriber apply to renew his/her EE certificate prior to the expiration
+  of the EE certificate, CA operator revokes the privious EE certificate and
+  then issues new certificate.
+</strike>
+</font>
+</p>
+
+<a name='4.6.4'/>
+<p class='L3'>4.6.4. Notification of new certificate issuance to subscriber</p>
+<p class='text'>
+- Basically the same as the initial certificate application of <a href='#C4.1'>section 4.1</a>.<br>
+</p>
+
+<a name='4.6.5'/>
+<p class='L3'>4.6.5. Conduct constituting acceptance of a renewal certificate</p>
+<p class='text'>
+- Basically the same as the initial certificate application of <a href='#C4.1'>section 4.1</a>.<br>
+</p>
+
+<a name='4.6.6'/>
+<p class='L3'>4.6.6. Publication of the renewal certificate by the CA</p>
+<p class='text'>
+- Basically the same as the initial certificate application of <a href='#C4.1'>section 4.1</a>.<br>
+</p>
+
+<a name='4.6.7'/>
+<p class='L3'>4.6.7. Notification of certificate issuance by the CA to other entities</p>
+<p class='text'>
+- Basically the same as the initial certificate application of <a href='#C4.1'>section 4.1</a>.<br>
+</p>
+
+<a name='C4.7'/>
+<p class='L2'>4.7. Certificate Re-key<a href='#T4.7' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.7.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C4.7.1'/>
+<p class='L3'>4.7.1. Circumstance for certificate re-key</p>
+<p class='text'>
+Generally, certificate re-key can or must take place in cases such as:<br>
+(case 1) after a certificate is revoked for reasons of key compromise; or<br>
+(case 2) after a certificate has expired and the usage period of the key pair has also expired<br>
+</p>
+
+<a name='C4.7.2'/>
+<p class='L3'>4.7.2. Who may request certification of a new public key</p>
+<p class='textnew'>
+- A subscriber of KISTI GRID CA can request certification of a new public
+ key in the following conditions.<br>
+</p>
+<ul class='ordernew'>
+<li>If a certificate of the subscriber is revoked for reasons of key compromise (case 1 in section 4.7.1).<br>
+<li>If a certificate has expired and the usage period of the key pair has also expired (case 2 in section 4.7.1).<br>
+</ul>
+
+<a name='C4.7.3'/>
+<p class='L3'>4.7.3. Processing certificate re-keying requests</p>
+<p class='text'>
+- If a certificate is revoked for reasons of key compromise (case 1 in section 4.7.1),
+  the certificate must be revoked and the subscriber of the certificate
+  should follow the enrollment process (of <a href='#C4.1'>section 4.1</a>)
+  again to get a new certificate.<br>
+- If a certificate has expired and the usage period of the key pair has also expired (case 2 in section 4.7.1),
+  the certificate must be revoked and the subscriber of the certificate
+  should follow the certificate application process (of <a href='#C4.1'>section 4.1</a>)
+  to get a new certificate.<br>
+</p>
+<p class='textnew'>
+<strike>- The process of re-key request processing is basically the same as the initial certificate
+  application of <a href='#C4.1'>section 4.1</a>.</strike><br>
+- The overlap of the validity period of the old certificate with the newly issued
+  certificate is not allowed.<br>
+- If the point of time of the re-key request has passed 3 years from
+  the previous enrollment process of the subscriber,
+  the subscriber is required follows a new enrollment process again.<br>
+<strike>
+- During re-key request, the certificate application process is the same as
+ initial certificate application in <a href='#C4.1'>section 4.1</a>.<br>
+</strike>
+- To get a new certificate the expired certificate should be revoked prior to the request for
+ a new certificate.<br>
+</p>
+
+<a name='C4.7.4'/>
+<p class='L3'>4.7.4. Notification of new certificate issuance to subscriber</p>
+<p class='text'>
+Covered in section 4.7.3.
+</p>
+
+<a name='C4.7.5'/>
+<p class='L3'>4.7.5. Conduct constituting acceptance of a re-keyed certificate</p>
+<p class='text'>
+Covered in section 4.7.3.
+</p>
+
+<a name='C4.7.6'/>
+<p class='L3'>4.7.6. Publication of the re-keyed certificate by the CA</p>
+<p class='text'>
+Covered in section 4.7.3.
+</p>
+
+<a name='C4.7.7'/>
+<p class='L3'>4.7.7. Notification of certificate issuance by the CA to other entities</p>
+<p class='text'>
+Covered in section 4.7.3.
+</p>
+
+
+<a name='C4.8'/>
+<p class='L2'>4.8. Certificate Modification<a href='#T4.8' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.8.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+KISTI GRID CA does not support certificate modification.
+</p>
+
+<!--
+<a name='4.8.1'/>
+<p class='L3'>4.8.1. Circumstance for certificate modification</p>
+<a name='4.8.2'/>
+<p class='L3'>4.8.2. Who may request certificate modification</p>
+<a name='4.8.3'/>
+<p class='L3'>4.8.3. Processing certificate modification requests</p>
+<a name='4.8.4'/>
+<p class='L3'>4.8.4. Notification of new certificate issuance to subscriber</p>
+<a name='4.8.5'/>
+<p class='L3'>4.8.5. Conduct constituting acceptance of modified certificate</p>
+<a name='4.8.6'/>
+<p class='L3'>4.8.6. Publication of the modified certificate by the CA</p>
+<a name='4.8.7'/>
+<p class='L3'>4.8.7. Notification of certificate issuance by the CA to other entities</p>
+-->
+
+<a name='C4.9'/>
+<p class='L2'>4.9. Certificate Revocation and Suspension<a href='#T4.9' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.9.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C4.9.1'/>
+<p class='L3'>4.9.1. Circumstances for revocation</p>
+
+
+<p class='text'>
+A certificate must be revoked when information it contains is suspected to be incorrect or compromised. This includes situations where:
+</p>
+<ul class='order'>
+ <li>The subscriber's private key is compromised or is suspected to have been compromised.
+ <li>The subscriber's information in the certificate is suspected to be inaccurate.
+ <li>The subscriber is known to have violated his obligations which could induce a critical security hole.
+ <li>The subscriber leaves his/her organization.
+ <li>In case of host/service certificates, the corresponding host/service is retired.
+</ul>
+
+<a name='C4.9.2'/>
+<p class='L3'>4.9.2. Who Can Request Revocation</p>
+<p class='text'>
+KISTI GRID CA will accept a revocation request made by<br>
+</p>
+<ul class='order'>
+ <li>The certificate subscriber
+ <li>KISTI GRID CA/RA
+ <li>Any other entity presenting evidence of circumstances as described in section <a href='#C4.2.1'>4.2.1</a>
+</ul>
+
+<p class='L3'>4.9.3. Procedure for Revocation Request</p>
+</p>
+<p class='text'>
+Entities requesting revocation of a certificate must authenticate themselves in one of the following ways: 
+</p>
+<ul class='order'>
+ <li>Sending an email, maybe signed by a valid and trusted certificate,
+ to ca@gridcenter.or.kr, RA will contact the subscriber for confirmation 
+<font color='red'>
+via e-mail or telephone.
+</font>
+ <li>In the other cases, authentication is performed with the same procedure
+ used to authenticate the identity of person. 
+</ul>
+<p class='text'>
+In both case above, the requesting entity must specify the reason for the revocation request and provide evidence of circumstances as described in section <a href='#C4.2.1'>4.2.1</a>. 
+</p>
+
+
+<p class='L3'>4.9.4. Revocation request grace period</p>
+<ul class='order'>
+<li>CA will process revocation as soon as it receives the revocation request and the request is approved.
+<li>The revocation information will be published to the online repository.
+<li class=''>During the revocation, a revocation notification is sent to the subscriber through the subscriber's email.
+</ul>
+
+<p class='L3'>4.9.5. Time within which CA must process the revocation request</p>
+<p class='text'>
+The CA should process the certificate revocation request within 1 working day from the recognition of the request.
+</p>
+
+
+<a name='4.9.6'/>
+<p class='L3'>4.9.6. Revocation checking requirement for relying parties</p>
+<p class='text'>No stipulation.</p>
+
+<p class='L3'>4.9.7. CRL Issuance Frequency (if applicable)</p>
+<p class='text'>
+<ul class='order'>
+ <li>The lifetime of the CRL is 30 days.<br>
+ <li>A new CRL is issued immediately after a revocation or at least 7 days before expiration.
+</ul>
+</p>
+
+<a name='4.9.8'/>
+<p class='L3'>4.9.8. Maximum latency for CRLs (if applicable)</p>
+<p class='text'>
+- CRLs must be published in the repository after generation as soon as possible.<br>
+- In KISTI GRID CA, the maximum latency between the generation of CRLs and posting of the CRLs to the repository is 1 hour.<br>
+</p>
+
+<a name='4.9.9'/>
+<p class='L3'>4.9.9. On-line revocation/status checking availability</p>
+<p class='text'>KISTI GRID PKI system does not provide any online status checking facility.</p>
+
+<a name='4.9.10'/>
+<p class='L3'>4.9.10. On-line revocation checking requirements</p>
+<p class='text'>KISTI GRID PKI system does not provides any online status checking facility.</p>
+
+<a name='4.9.11'/>
+<p class='L3'>4.9.11. Other forms of revocation advertisements available</p>
+<p class='text'>No stipulation.</p>
+
+<a name='4.9.12'/>
+<p class='L3'>4.9.12. Special requirements re key compromise</p>
+<p class='text'>No stipulation.</p>
+
+<a name='4.9.13'/>
+<p class='L3'>4.9.13. Circumstances for suspension</p>
+<p class='text'>KISTI GRID CA does not support Certificate Suspension.</p>
+
+<a name='4.9.14'/>
+<p class='L3'>4.9.14. Who can request suspension</p>
+<p class='text'>KISTI GRID CA does not support Certificate Suspension.</p>
+
+<a name='4.9.15'/>
+<p class='L3'>4.9.15. Procedure for suspension request</p>
+<p class='text'>KISTI GRID CA does not support Certificate Suspension.</p>
+
+<a name='4.9.16'/>
+<p class='L3'>4.9.16. Limits on suspension period</p>
+<p class='text'>KISTI GRID CA does not support Certificate Suspension.</p>
+
+<a name='C4.10'/>
+<p class='L2'>4.10. Certificate Status Services<a href='#T4.10' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.10.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>KISTI GRID CA does not support (on-line) certificate status services.</p>
+
+<!--
+<a name='4.10.1'/>
+<p class='L3'>4.10.1. Operational characteristics</p>
+<a name='4.10.2'/>
+<p class='L3'>4.10.2. Service availability</p>
+<a name='4.10.3'/>
+<p class='L3'>4.10.3. Optional features</p>
+-->
+
+<a name='C4.11'/>
+<p class='L2'>4.11. End of Subscription<a href='#T4.11' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.11.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+If a subscriber of KISTI GRID CA end the subscription to the CA services:<br>
+<br>
+The subscriber must do the following:<br>
+- Must not use any certificate issued from KISTI GRID CA<br>
+- Must delete his WACC(from <a href='#C4.1'>section 4.1</a>) from his web browser.<br>
+<br>
+The CA must do the following:<br>
+- Must revoked all certificates issued for the subscriber.<br>
+- Must disable any authentication for the user's WACC<br>
+</p>
+
+
+<a name='C4.12'/>
+<p class='L2'>4.12. Key Escrow and Recovery<a href='#T4.12' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.4.12.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>No stipulation.</p>
+
+<!--
+<a name='4.12.'/>
+<p class='L3'>4.12.1. Key escrow and recovery policy and practices</p>
+<a name='4.12.'/>
+<p class='L3'>4.12.2. Session key encapsulation and recovery policy and practices</p>
+-->
+
+<a name='C5'/>
+<p class='L1'>5. Management, Operational, and Physical Controls<a href='#T5' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.' class='rfc'>[RFC3647]</a></p>
+<a name='C5.1'/>
+<p class='L2'>5.1. Physical Security Controls<a href='#T5.1' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.1.' class='rfc'>[RFC3647]</a></p>
+
+<p class='text'>
+The CA operates in a controlled environment, where access is restricted to authorized people. 
+</p>
+
+<a name='C5.1.1'/>
+<p class='L3'>5.1.1. Site location and construction</p>
+
+<p class='text'>
+KISTI GRID PKI is located at Grid Technology Research Team, KISTI at Daejeon, Korea.
+</p>
+
+<a name='C5.1.2'/>
+<p class='L3'>5.1.2. Physical access</p>
+<p class='text'>
+Physical access to the KISTI GRID CA machine is restricted to authorized personnel.<br>
+The KISTI GRID CA machines (both the issueing machine and the public web server) are:
+<ul class='order'>
+ <li>running on dedicated machines.
+ <li>located in a secure environment where access is controlled.
+ <li>professionally managed.
+</ul>
+</p>
+
+<a name='C5.1.3'/>
+<p class='L3'>5.1.3. Power and air conditioning</p>
+<p class='text'>
+The CA signing machine and the CA web server are both protected by uninterruptible power supplies. Environment temperature in rooms containing CA related equipment is maintained at appropriate levels by suitable air conditioning systems.
+</p>
+
+<a name='C5.1.4'/>
+<p class='L3'>5.1.4. Water exposures</p>
+<p class='text'>
+The CA shall ensure that the CA system is adequately protected from water exposures.
+</p>
+
+<a name='C5.1.5'/>
+<p class='L3'>5.1.5. Fire prevention and protectionr</p>
+<p class='text'>
+The building housing the KISTI GRID CA facilities has a fire alarm system.<br>
+The CA shall ensure that the CA system is adequately protected from fire by a fire suppression system.<br>
+</p>
+
+<a name='C5.1.6'/>
+<p class='L3'>5.1.6. Media storage</p>
+<p class='text'>
+The KISTI GRID CA key and backup copies of CA related information is securely kept in several removable storage media.
+</p>
+
+<a name='C5.1.7'/>
+<p class='L3'>5.1.7. Waste disposal</p>
+<p class='text'>
+The CA shall ensure that all media containing sensitive information is sanitized, to remove information such that data recovery is not possible, or destroyed before release for disposal. CA personnel shall account for the destruction of sensitive information.
+</p>
+
+<a name='C5.1.8'/>
+<p class='L3'>5.1.8. Off-site backup</p>
+<p class='text'>
+In KISTI GRID CA, No off-site backups are currently performed. 
+</p>
+
+
+<a name='C5.2'/>
+<p class='L2'>5.2. Procedural Controls<a href='#T5.2' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.2.' class='rfc'>[RFC3647]</a></p>
+
+<a name='5.2.1'/>
+<p class='L3'>5.2.1. Trusted roles</p>
+<ul class='order'>
+<li>SYSTEM ADMINISTRATOR(SYSADM) has full control over the CA server and software.<br>
+<li>CERTIFICATE AUTHORITY OPERATOR(CAO) can manage all certificates, requests and cryptographic
+  data including CA private key. CAO is contact point for subscribers about CA operation.
+  CAO can make changes of CP/CPS.<br>
+<li>REGISTRATION AUTHORITY OPERATOR(RAO) examines subscriber's information and checks
+ the trust of the subscriber in belalf of certificate authority.<br>
+<li>SYSTEM AUDITOR(SA) have read-only access to all components of the PKI system
+  to verify the operation complies with the rules and regulations of this CP/CPS.
+  SA approves any changes of CP/CPS by CAO in prior to an approval of the regional PMA(APGrid PMA).<br>
+</ul>
+
+<a name='5.2.2'/>
+<p class='L3'>5.2.2. Number of persons required per task</p>
+<p class='text'>
+For operation of KISTI GRID PKI, the number of persons required for the roles is:<br>
+</p>
+<ul class='order'>
+<li>SYSTEM ADMINISTRATOR: 1 person or more.<br>
+<li>CERTIFICATE AUTHORITY OPERATOR: 2 persons or more for back-up each other.<br>
+<li>REGISTRATION AUTHORITY OPERATOR: 1 person or more for each RA site.<br>
+<li>SYSTEM AUDITOR: 1 person or more.<br>
+</ul>
+
+<a name='5.2.3'/>
+<p class='L3'>5.2.3. Identification and authentication for each role</p>
+<p class='text'>
+In KISTI GRID PKI, on-line and/or off-line system will identify and authenticate
+the operator when the staff operates the system.
+</p>
+
+<a name='5.2.4'/>
+<p class='L3'>5.2.4. Roles requiring separation of duties</p>
+<p class='text'>
+- SYSTEM AUDITOR may not be a SYSTEM ADMINISTRATOR, or CERTIFICATE AUTHORITY OPERATOR.<br>
+</p>
+
+
+<a name='C5.3'/>
+<p class='L2'>5.3. Personnel Security Controls<a href='#T5.3' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.3.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+All access to the servers and applications that comprise the KISTI GRID PKI is limited to KISTI GRID PKI security staffs.
+</p>
+
+<a name='5.3.1'/>
+<p class='L3'>5.3.1. Qualifications, experience, and clearance requirements</p>
+<p class='text'>
+The CA shall ensure that all staff performing CA and RA functions possess the necessary knowledge, experience and qualifications to perform their duties.
+</p>
+
+<a name='5.3.2'/>
+<p class='L3'>5.3.2. Background check procedures</p>
+<p class='text'>
+CA personnel must be a formal member of KISTI.
+</p>
+
+<a name='5.3.3'/>
+<p class='L3'>5.3.3. Training requirements</p>
+<p class='text'>
+- The CA shall ensure that all personnel receive appropriate training.
+Such training shall address relevant topics such as security requirements,
+operational responsibilities and associated procedures.
+</p>
+
+<a name='5.3.4'/>
+<p class='L3'>5.3.4. Retraining frequency and requirements</p>
+<p class='text'>
+The CA shall review and update its training program at least once a year to accommodate changes in the CA system.
+</p>
+
+<a name='5.3.5'/>
+<p class='L3'>5.3.5. Job rotation frequency and sequence</p>
+<p class='text'>No stipulation.</p>
+
+<a name='5.3.6'/>
+<p class='L3'>5.3.6. Sanctions for unauthorized actions</p>
+<p class='text'>
+In the event of actual or suspected unauthorized actions by a person performing duties with respect to the operation of the CA or an RA, the CA shall suspend his or her access to the CA system.
+</p>
+
+<a name='5.3.7'/>
+<p class='L3'>5.3.7. Independent contractor requirements</p>
+<p class='text'>
+The CA shall ensure that contract personnel satisfy the same personnel security requirements with respect to appointment, training and background checks as those applicable to CA employees.
+</p>
+
+<a name='5.3.8'/>
+<p class='L3'>5.3.8. Documentation supplied to personnel</p>
+<p class='text'>
+The CA shall provide these Certificate Policies, relevant provisions of the CPS, as well as any specific statutes, policies or contracts relevant to their positions to CA personnel, RAs and Client Responsible Individuals.
+</p>
+
+<a name='C5.4'/>
+<p class='L2'>5.4. Audit Logging Procedures<a href='#T5.4' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.4.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+- The KISTI GRID CA will retain records as much as possible so that the KISTI GRID CA
+ could trace anything if something illegal would happen.<br>
+- Such audit information is not publicly available.<br>
+- Auditors are allowed to access the information as part of auditing and such
+ information must be kept confidential.<br>
+- CA operator performs operational audits of the CA/RA staff at least once per year.
+</p>
+
+<a name='C5.4.1'/>
+<p class='L3'>5.4.1. Types of events recorded</p>
+<ul class='order'>
+<li>Certification requests<br>
+<li>Revocation requests<br>
+<li>Issued certificates<br>
+<li>Issued CRLs<br>
+<li>shutdown/boot/reboot/login/logout/sudo logs of the CA machine and on-line request web server.
+<li>other logs archived by UNIX operating of the CA machine and RA server
+</ul>
+
+
+<a name='5.4.2'/>
+<p class='L3'>5.4.2. Frequency of processing log</p>
+<p class='text'>
+The CA shall ensure that all significant events are explained in an audit log summary and that CA personnel review audit logs at least once every month. Such reviews involve verifying that the log has not been tampered with, and then inspecting all log entries. CA personnel shall conduct a more thorough investigation of any "alerts" or irregularities in the logs. The CA shall indicate who has responsibility for audit log review and audit log summary preparation in the CPS.
+</p>
+
+<a name='5.4.3'/>
+<p class='L3'>5.4.3. Retention period for audit log</p>
+<p class='text'>
+The CA shall retain its audit logs on site for at least two(2) months and subsequently retain audit logs in the manner described in Section 5.5.
+</p>
+
+<a name='5.4.4'/>
+<p class='L3'>5.4.4. Protection of audit log</p>
+<p class='text'>
+The CA shall protect the electronic audit log system and audit information captured electronically or manually from unauthorized viewing, modification, deletion or destruction.
+</p>
+
+<a name='5.4.5'/>
+<p class='L3'>5.4.5. Audit log backup procedures</p>
+<p class='text'>
+The CA shall back up or copy all audit logs and audit summaries.
+</p>
+
+<a name='5.4.6'/>
+<p class='L3'>5.4.6. Audit collection system (internal vs. external)</p>
+<p class='text'>No stipulation.</p>
+
+<a name='5.4.7'/>
+<p class='L3'>5.4.7. Notification to event-causing subject</p>
+<p class='text'>No stipulation.</p>
+
+<a name='5.4.8'/>
+<p class='L3'>5.4.8. Vulnerability assessments</p>
+<p class='text'>No stipulation.</p>
+
+
+
+
+<a name='C5.5'/>
+<p class='L2'>5.5. Records Archival<a href='#T5.5' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.5.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C5.5.1'/>
+<p class='L3'>5.5.1. Types of records archived</p>
+<ul class='text'>
+<li>CA's records archival
+ <ul class='order'>
+ <li>CA records all the types of events listed in <a href='#C5.4.1'>section 5.4.1</a> are archived.
+ <li>In addition to that, email sent to/from ca@gridcenter.or.kr messages will be archived as well.
+ <li>CA private keys must be backed up and protected at a level of physical and cryptographic protection equal to or exceeding that in place at the CA site.
+ </ul>
+<li class=''>RA's records archival
+ <ul class='order'>
+ <li>RA records all the types of events regarding user registration, certificate/revocation request including:
+  <ul class='order'>
+  <li>date of meeting with a subscriber
+  <li>evidence of identity of a subscriber
+  <li>email messages sent to/from the RA's email address.
+  </ul>
+ </ul>
+</ul>
+
+<a name='C5.5.2'/>
+<p class='L3'>5.5.2. Retention period for archive</p>
+<p class='text'>
+Certificates and CRLs generated by the CA, must be retained for at least 2 years after their expiration, and;<br>
+The minimum retention period is 3 years.<br>
+</p>
+
+<a name='C5.5.3'/>
+<p class='L3'>5.5.3. Protection of archive</p>
+<p class='text'>
+System logs and email archives are protected by the authorization mechanism provided by Unix operating system.
+Only the owners of the system logs are able to modify the logs.
+System logs and email archives are periodically back-up to the offline media which is stored in a safe place.
+</p>
+
+<a name='5.5.4'/>
+<p class='L3'>5.5.4. Archive backup procedures</p>
+<p class='text'>
+A second copy of all material retained or backed up must be stored in readonly media like CD-ROM.<br>
+The second copy must be protected either by physical security alone, or a combination of physical and cryptographic protection.<br>
+</p>
+
+<a name='5.5.5'/>
+<p class='L3'>5.5.5. Requirements for time-stamping of records</p>
+<p class='text'>
+All archived logs and documents are time stamped.
+</p>
+
+<a name='5.5.6'/>
+<p class='L3'>5.5.6. Archive collection system (internal or external)</p>
+<p class='text'>No stipulation.</p>
+
+<a name='5.5.7'/>
+<p class='L3'>5.5.7. Procedures to obtain and verify archive information</p>
+<p class='text'>No stipulation.</p>
+
+
+
+<a name='C5.6'/>
+<p class='L2'>5.6. Key Changeover<a href='#T5.6' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.6.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+- When the CA's cryptographic data needs to be changed (e.g. CA key expiration),
+from the time of distribution of new crtyptographic data,
+only the new CA certificate will be used for certificate signing purposes.<br>
+- From that time, the old CA certificate will not be used for certificate signing purposes.<br>
+- The overlap of the old and new CA certificate must be at least the longest time an end-entity certificate can be valid(1 year).<br>
+- The old CA certificate will be valid and available to verify old signatures and the secret key to sign CRLs until all the certificates signed using the associated private key have also expired.<br>
+</p>
+
+
+<a name='C5.7'/>
+<p class='L2'>5.7. Compromise and Disaster Recovery<a href='#T5.7' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.7.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+ <li>If it is detected that hardware, software or data are corrupted or damaged 
+  <ul class='order'>
+   <li>Recover the system by using backup hardware, software, or data as quickly as possible.
+  </ul>
+ <li>If a CA's private key is compromised or suspected to be compromised, the KISTI GRID CA will:
+  <ul class='order'>
+   <li>Notify subscribers, RAs and relying parties.
+   <li class=''>Revoke all issued certificates.
+   <li>Terminate the certificates and CRLs distribution service for certificates/CRLs issued using the compromised private key.
+   <li>Create a new pair of key and re-build the CA system.
+  </ul>
+</ul>
+
+<!--
+<a name='5.7.1'/>
+<p class='L3'>5.7.1. Incident and compromise handling procedures</p>
+<a name='5.7.2'/>
+<p class='L3'>5.7.2. Computing resources, software, and/or data are corrupted</p>
+<a name='5.7.3'/>
+<p class='L3'>5.7.3. Entity private key compromise procedures</p>
+<a name='5.7.4'/>
+<p class='L3'>5.7.4. Business continuity capabilities after a disaster</p>
+-->
+
+
+<a name='C5.8'/>
+<p class='L2'>5.8. CA or RA Termination<a href='#T5.8' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.5.8.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+Before KISTI GRID CA terminates its services it will:<br>
+</p>
+<ul class='order'>
+ <li>Make publicly available information of its termination.
+ <li>Stop issuing certificates and CRLs.
+ <li>Destroy its private key's and all copies.
+</ul>
+
+
+<a name='C6'/>
+<p class='L1'>6. Technical Security Controls<a href='#T6' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C6.1'/>
+<p class='L2'>6.1. Key Pair Generation and Installation<a href='#T6.1' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.1.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C6.1.1'/>
+<p class='L3'>6.1.1. Key pair generation</p>
+<ul class='order'>
+<li class=''>A CA key pair is generated by CA staff on a signing machine which is not connected to any kind of network.
+<li>End entities' cryptographic keys are locally generated by their application during the requesting process.
+<li>KISTI GRID PKI does not generate private keys for subjects.
+</ul>
+
+<a name='C6.1.2'/>
+<p class='L3'>6.1.2. Private key delivery to subscriber</p>
+<p class='text'>
+The KISTI GRID CA does not generate end entities' private keys hence does not deliver private keys. User's private key could be generated by browser application in personal computer. 
+</p>
+
+<a name='C6.1.3'/>
+<p class='L3'>6.1.3. Public key delivery to certificate issuer</p>
+<p class='text'>
+End entity will send its public key included in CSR at time of certificate request.
+</p>
+
+<a name='C6.1.4'/>
+<p class='L3'>6.1.4. CA public key delivery to relying parties</p>
+<p class='text'>
+CA certificate will be published on the KISTI Grid PKI repository.<br>
+</p>
+
+<a name='C6.1.5'/>
+<p class='L3'>6.1.5. Key sizes</p>
+<p class='text'>
+<ul class='order'>
+<li>The minimum key length for user or host/service certificate is 1024 bits.<br>
+<li>The CA key length is 2048 bits.<br>
+</ul>
+</p>
+
+<a name='C6.1.6'/>
+<p class='L3'>6.1.6. Public key parameters generation and quality checking</p>
+<p class='text'>
+No stipulation
+</p>
+
+<a name='C6.1.7'/>
+<p class='L3'>6.1.7. Key usage purposes(as per X.509 v3 key usage field)</p>
+<p class='text'>
+KISTI GRID CA private key is the only key used for signing CRLs and Certificates for persons, servers and services.<br>
+<br>
+The Certificate key Usage field must be used in accordance with the ``Internet X.509 Public Key Infrastructure Certificate and CRL profile'' [RFC 2459].<br>
+</p>
+
+
+<a name='C6.2'/>
+<p class='L2'>6.2. Private Key Protection and Cryptographic Module Engineering<a href='#T6.2' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.2.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C6.2.1'/>
+<p class='L3'>6.2.1. Cryptographic module standards and controls</p>
+<p class='text'>
+KISTI GRID CA do not use any hardware security module.<br>
+</p>
+
+<a name='C6.2.2'/>
+<p class='L3'>6.2.2. Private key (n out of m) multi person control</p>
+<p class='text'>
+In KISTI GRID CA system, (n out of m) multi-person control is not supported.<br>
+</p>
+<p class='text'>
+The passphrase for accessing to CA's privatekey is known to 3 CA staffs.<br>
+</p>
+<!--
+The CA's private key is not under (n out of m) multi-person control. But the KISTI GRID CA implements multi-person control for the access to the CA server as described in this document [5.1.2 Physical Access]. Backup copy of CA's private key is under (2 out of 3) multi-person control.
+-->
+
+<a name='C6.2.3'/>
+<p class='L3'>6.2.3. Private key escrow</p>
+<p class='text'>Not supported.</p>
+
+<a name='C6.2.4'/>
+<p class='L3'>6.2.4. Private key backup</p>
+<p class='text'>
+The KISTI GRID private key backup is performed by CA operator and the two copies of backup key is kept encrypted in a CDROM and memory stick respectively in a safe place where access is controlled. 
+</p>
+
+<a name='6.2.5'/>
+<p class='L3'>6.2.5. Private key archival</p>
+<p class='text'>
+See <a href=#C5.5>Section 5.5</a>.
+</p>
+
+<a name='6.2.6'/>
+<p class='L3'>6.2.6. Private key transfer into or from a cryptographic module</p>
+<p class='text'>No stipulation.</p>
+
+<a name='6.2.7'/>
+<p class='L3'>6.2.7. Private key storage on cryptographic module</p>
+<p class='text'>No stipulation.</p>
+
+<a name='6.2.8'/>
+<p class='L3'>6.2.8. Method of activating private key</p>
+<p class='text'>
+See <a href='#C6.4'>Section 6.4</a>.
+</p>
+
+<a name='6.2.9'/>
+<p class='L3'>6.2.9. Method of deactivating private key</p>
+<p class='text'>No stipulation.</p>
+
+
+<a name='6.2.10'/>
+<p class='L3'>6.2.10. Method of destroying private key</p>
+<p class='text'>No stipulation.</p>
+
+<a name='6.2.11'/>
+<p class='L3'>6.2.11. Cryptographic Module Rating</p>
+<p class='text'>No stipulation.</p>
+
+
+<a name='C6.3'/>
+<p class='L2'>6.3. Other Aspects of Key Pair Management<a href='#T6.3' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.3.' class='rfc'>[RFC3647]</a></p>
+<a name='6.3.1'/>
+<p class='L3'>6.3.1. Public key archival</p>
+<p class='text'>
+The CA shall retain all public key certificates it generates.
+</p>
+
+<a name='6.3.2'/>
+<p class='L3'>6.3.2. Certificate operational periods and key pair usage periods</p>
+<ul class='order'>
+ <li>The lifetime of KISTI GRID CA certificate is ten(10) years. 
+ <li>The lifetime of user certificate is one(1) year. 
+ <li>The lifetime of host certificate is one(1) year. 
+</ul>
+
+
+
+<a name='C6.4'/>
+<p class='L2'>6.4. Activation Data<a href='#T6.4' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.4.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+ <li>The KISTI GRID CA's private key is protected by a pass phrase over 15 characters.
+ <li>This pass phrase is only known by CA operators.
+ <li>The pass phrase is in a sealed envelop kept in a safe place where access is controlled.
+ <li><font color=''>But the sealed envelop is kept separated from the backed private key.</font>
+</ul>
+
+<!--
+<a name='6.4.1'/>
+<p class='L3'>6.4.1. Activation data generation and installation</p>
+<a name='6.4.2'/>
+<p class='L3'>6.4.2. Activation data protection</p>
+<a name='6.4.3'/>
+<p class='L3'>6.4.3. Other aspects of activation data</p>
+-->
+
+<a name='C6.5'/>
+<p class='L2'>6.5. Computer Security Controls<a href='#T6.5' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.5.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C6.5.1'/>
+<p class='L3'>6.5.1. Specific computer security technical requirements</p>
+<ul class='order'>
+<li>CA operating systems are maintained at a high level of security by applying all the relevant patches.<br>
+<li>Monitoring is performed to detect unauthorized software changes.<br>
+<li>CA systems configuration is reduced to the base minimum.<br>
+<li class=''>Both CA signing machine and web server machine are used for dedicated purpose respectively.
+</ul>
+
+
+<a name='C6.5.2'/>
+<p class='L3'>6.5.2. Computer security rating</p>
+<p class='text'>
+No stipulation.
+</p>
+
+
+<a name='C6.6'/>
+<p class='L2'>6.6. Life Cycle Security Controls<a href='#T6.6' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.6.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+No stipulation.
+</p>
+
+<!--
+<a name='6.6.1'/>
+<p class='L3'>6.6.1. System development controls</p>
+<a name='6.6.2'/>
+<p class='L3'>6.6.2. Security management controls</p>
+<a name='6.6.3'/>
+<p class='L3'>6.6.3. Life cycle security controls</p>
+-->
+
+<a name='C6.7'/>
+<p class='L2'>6.7. Network Security Controls<a href='#T6.7' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.7.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+<li>The CA signing machine is kept off-line.<br>
+<li class=''>The CA web server machine is protected by a firewall.
+<li class=''>The CA web server machine is a dedicated machine and no network service
+ other than CA web server does not run on the server.
+<li class=''>Appropriate software upgrade/patch of the CA web server is performed every 6 month or immediately if it is required.
+</ul>
+
+<a name='C6.8'/>
+<p class='L2'>6.8. Time-stamping<a href='#T6.8' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.6.8.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+No stipulation.
+</p>
+
+<a name='C7'/>
+<p class='L1'>7. Certificate and CRL Profiles<a href='#T7' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.7.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C7.1'/>
+<p class='L2'>7.1. Certificate Profile<a href='#T7.1' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.7.1.' class='rfc'>[RFC3647]</a></p>
+
+
+<a name='C7.1.1'/>
+<p class='L3'>7.1.1. Version number(s)</p>
+<p class='text'>
+X.509 v3.
+</p>
+
+<a name='C7.1.2'/>
+<p class='L3'>7.1.2. Certificate extensions</p>
+<p class='text'>
+CA Certificate:
+</p>
+<ul class='order'>
+ <li>X509v3 Basic Constraints: critical, CA:TRUE 
+ <li>X509v3 Key Usage: critical,
+ Certificate Sign (keyCertSign),
+ CRL Sign (cRLSign),
+<font color='red'>
+<strike>
+ Digital Signature (digitalSignature),
+ Non Repudiation (nonRepudiation),
+ Key Encipherment (keyEncipherment)
+</strike>
+</font>
+ <li>Certificate Policies: 1.3.6.1.4.1.14305.1.1.1.2.0
+
+</ul>
+
+<p class='text'>
+User Certificates:
+</p>
+<ul class='order'>
+ <li>X509v3 Basic Constraints: critical, CA:FALSE
+ <li>X509v3 Key Usage: critical,
+ Digital Signature (digitalSignature),
+ Non Repudiation (nonRepudiation),
+ Key Encipherment (keyEncipherment),
+ Data Encipherment (dataEncipherment)
+ <li>X509v3 Extended Key Usage: TLS Web Client Authentication(clientAuth)
+ <li>X509v3 Issuer Alternative Name: email:ca@gridcenter.or.kr, URI:http://ca.gridcenter.or.kr/
+ <li>X509v3 CRL Distribution Points: URI://ca.gridcenter.or.kr/CRL/
+ <li>Certificate Policies: 1.3.6.1.4.1.14305.1.1.1.2.0
+</ul>
+
+<p class='text'>
+Host Certificates:
+</p>
+<ul class='order'>
+ <li>X509v3 Basic Constraints: critical, CA:FALSE
+ <li>X509v3 Key Usage: critical,
+ Digital Signature (digitalSignature),
+ Key Encipherment (keyEncipherment),
+ Data Encipherment (dataEncipherment)
+ <li>X509v3 Extended Key Usage: TLS Web Server Authentication(serverAuth), TLS Web Client Authentication(clientAuth)
+ <li>X509v3 Issuer Alternative Name: email:ca@gridcenter.or.kr, URI:http://ca.gridcenter.or.kr/
+ <li>X509v3 Subject Alternative Name: DNS:&lt;FQDN of the host&gt;
+ <li>X509v3 CRL Distribution Points: URI://ca.gridcenter.or.kr/CRL/
+ <li>Certificate Policies: 1.3.6.1.4.1.14305.1.1.1.2.0
+</ul>
+
+<style>
+td.a { text-align:center; background-color:#ffffff; font-weight:bold;  }
+td.b { text-align:center; background-color:#ffffff; font-weight:bold;  }
+td.c { text-align:center; background-color:#ffffff; font-weight:normal;  }
+</style>
+<p class='text'>
+<table border='0' bgcolor='#666666' cellpadding='1' cellspacing='1'>
+<tr>
+ <td class='a'>X.509v3 Extension</td>
+ <td class='a'>CA Certificate</td>
+ <td class='a'>User Certificates</td>
+ <td class='a'>Host Certificates</td>
+</tr>
+<tr>
+ <td class='b'>Basic Constraints</td>
+ <td class='c'>critical, CA:TRUE</td>
+ <td class='c'>critical, CA:FALSE</td>
+ <td class='c'>critical, CA:FALSE</td>
+</tr>
+<tr>
+ <td class='b'>Key Usage</td>
+ <td class='c'>critical</td>
+ <td class='c'>critical</td>
+ <td class='c'>critical</td>
+</tr>
+<tr>
+ <td class='b'>Key Usage:Certificate Sign</td>
+ <td class='c'>O</td>
+ <td class='c'>-</td>
+ <td class='c'>-</td>
+</tr>
+<tr>
+ <td class='b'>Key Usage:CRL Sign</td>
+ <td class='c'>O</td>
+ <td class='c'>-</td>
+ <td class='c'>-</td>
+</tr>
+<tr>
+ <td class='b'>Key Usage:Digital Signature</td>
+ <td class='c'>O</td>
+ <td class='c'>O</td>
+ <td class='c'>O</td>
+</tr>
+<tr>
+ <td class='b'>Key Usage:Non Repudiation</td>
+ <td class='c'>O</td>
+ <td class='c'>O</td>
+ <td class='c'>-</td>
+</tr>
+<tr>
+ <td class='b'>Key Usage:Key Encipherment</td>
+ <td class='c'>O</td>
+ <td class='c'>O</td>
+ <td class='c'>O</td>
+</tr>
+<tr>
+ <td class='b'>Key Usage:Data Encipherment</td>
+ <td class='c'>-</td>
+ <td class='c'>O</td>
+ <td class='c'>O</td>
+</tr>
+<tr>
+ <td class='b'>Extended Key Usage</td>
+ <td class='c'>-</td>
+ <td class='c'>TLS Web Client Authentication(clientAuth)</td>
+ <td class='c'>TLS Web Server Authentication(serverAuth),<br>TLS Web Client Authentication(clientAuth) 
+</td>
+</tr>
+<tr>
+ <td class='b'>Issuer Alternative Name</td>
+ <td class='c'>-</td>
+ <td class='c'>email:ca@gridcenter.or.kr,<br>URI:http://ca.gridcenter.or.kr/</td>
+ <td class='c'>email:ca@gridcenter.or.kr,<br>URI:http://ca.gridcenter.or.kr/</td>
+</tr>
+<tr>
+ <td class='b'>Subject Alternative Name</td>
+ <td class='c'>-</td>
+ <td class='c'>-</td>
+ <td class='c'>DNS:&lt;FQDN of the host&gt;</td>
+</tr>
+<tr>
+ <td class='b'>CRL Distribution Points</td>
+ <td class='c'>-</td>
+ <td class='c'>URI://ca.gridcenter.or.kr/CRL/</td>
+ <td class='c'>URI://ca.gridcenter.or.kr/CRL/</td>
+</tr>
+<tr>
+ <td class='b'>Certificate Policies</td>
+ <td class='c'>1.3.6.1.4.1.14305.1.1.1.2.0</td>
+ <td class='c'>1.3.6.1.4.1.14305.1.1.1.2.0</td>
+ <td class='c'>1.3.6.1.4.1.14305.1.1.1.2.0</td>
+</tr>
+</table>
+</p>
+
+
+
+<a name='C7.1.3'/>
+<p class='L3'>7.1.3. Algorithm object identifiers</p>
+<p class='text'>
+Signature Algorithm: sha1WithRSAEncryption(2048 bits)
+</p>
+
+
+<a name='C7.1.4'/>
+<p class='L3'>7.1.4. Name forms</p>
+<ul class='order'>
+<li>
+Issuer:<br>
+C=KR, O=KISTI, O=GRID, CN=KISTI Grid Certificate Authority<br>
+<li>
+User DN:<br>
+C=KR, O=KISTI, O=GRID, O=[applicant's organization], CN=[the name of applicant]<br>
+<li>
+Host DN:<br>
+C=KR, O=KISTI, O=GRID, O=[applicant's organization], CN=[FQDN of the hostname]<br>
+</ul>
+
+<a name='C7.1.5'/>
+<p class='L3'>7.1.5. Name constraints</p>
+<p class='text'>
+Subject DN can contain the following characters:<br>
+Alphabetic characters: a-z, A-Z<br>
+Numerical character: 0-9<br>
+Special character: -(dash), _(underscore)<br>
+<br>
+No other characters are not allowed for the subject name.<br>
+</p>
+
+<a name='C7.1.6'/>
+<p class='L3'>7.1.6 Certificate policy object identifier</p>
+<p class='text'>
+X509v3 Certificate Policies: Policy: 1.3.6.1.4.1.14305.1.1.1.2.0<br>
+See <a href='#C1.2'>Section 1.2</a>.
+</p>
+
+<a name='C7.1.7'/>
+<p class='L3'>7.1.7 Usage of policy constraints extensions</p>
+<p class='text'>No Stipulation.</p>
+
+<a name='C7.1.8'/>
+<p class='L3'>7.1.8 Policy qualifier syntax and semantics</p>
+<p class='text'>No Stipulation.</p>
+
+<a name='7.1.9'/>
+<p class='L3'>7.1.9. Processing semantics for the critical Certificate Policies extension</p>
+<p class='text'>No Stipulation.</p>
+
+<a name='C7.2'/>
+<p class='L2'>7.2. CRL Profile<a href='#T7.2' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.7.2.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+CRLs are signed by the KISTI GRID CA private key and are published in a web page.
+</p>
+
+<a name='C7.2.1'/>
+<p class='L3'>7.2.1. Version number(s)</p>
+<p class='text'>
+X.509 v2.
+</p>
+
+<a name='C7.2.2'/>
+<p class='L3'>7.2.2. CRL and CRL entry extensions</p>
+<p class='text'>
+Message digest algorithm of the CRL: SHA-1<br>
+</p>
+
+
+
+<a name='C7.3'/>
+<p class='L2'>7.3. OCSP Profile<a href='#T7.3' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.7.3.' class='rfc'>[RFC3647]</a></p>
+
+<a name='7.3.1'/>
+<p class='L3'>7.3.1. Version number(s)</p>
+<p class='text'>No stipulation.</p>
+
+<a name='7.3.2'/>
+<p class='L3'>7.3.2. OCSP extensions</p>
+<p class='text'>No stipulation.</p>
+
+
+<a name='C8'/>
+<p class='L1'>8. Compliance Audit and Other Assessment<a href='#T8' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.8.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C8.1'/>
+<p class='L2'>8.1. Frequency of Entity Compliance Assessment<a href='#T8.1' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.7.3.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+The KISTI GRID CA will accept external Compliance Audit.<br>
+In addition, the KISTI GRID CA performs operational self-assessment of CA/RA staff at least once per year.
+</p>
+
+<a name='C8.2'/>
+<p class='L2'>8.2. Identity/Qualifications of Assessor<a href='#T8.2' class='toc'>[Content]</a></p>
+<p class='text'>
+KISTI GRID CA can be audited by the APGrid PMA.
+</p>
+
+<a name='C8.3'/>
+<p class='L2'>8.3. Assessor's relationship to assessed entity<a href='#T8.3' class='toc'>[Content]</a></p>
+<p class='text'>
+KISTI GRID CA can be audited by the APGrid PMA.
+</p>
+
+<a name='C8.4'/>
+<p class='L2'>8.4. Topics Covered by Assessment<a href='#T8.4' class='toc'>[Content]</a></p>
+<p class='text'>
+Audit items will be selected based on the minimum CA requirements and documents enacted by the APGridPMA.<br>
+</p>
+
+<a name='C8.5'/>
+<p class='L2'>8.5. Actions Taken as a Result of Deficiency<a href='#T8.5' class='toc'>[Content]</a></p>
+<p class='text'>
+The KISTI GRID CA has the responsibility for the action to be taken as a result of deficiency. When the KSITI GRID CA receives an audit report from the auditor, it will send a report on actions to the auditor within two weeks. The report must describe actions taken as a result of deficiency and their timetable.
+</p>
+
+<a name='C8.6'/>
+<p class='L2'>8.6. Communications of Results<a href='#T8.6' class='toc'>[Content]</a></p>
+<p class='text'>
+The result of the audit will be made available to APGrid PMA in which the KISTI GRID CA participates.
+It may make the results of the audit publicly available.<br>
+</p>
+
+
+<a name='C9'/>
+<p class='L1'>9. Other Business and Legal Matters<a href='#T9' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.' class='rfc'>[RFC3647]</a></p>
+
+<a name='C9.1'/>
+<p class='L2'>9.1. Fees<a href='#T9.1' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.1.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+No fees are charged for any service provided by the KISTI GRID CA.
+</p>
+
+<!--
+<a name='9.1.1'/>
+<p class='L3'>9.1.1. Certificate issuance or renewal fees</p>
+<a name='9.1.2'/>
+<p class='L3'>9.1.2. Certificate access fees</p>
+<a name='9.1.3'/>
+<p class='L3'>9.1.3. Revocation or status information access fees</p>
+<a name='9.1.4'/>
+<p class='L3'>9.1.4. Fees for other services</p>
+<a name='9.1.5'/>
+<p class='L3'>9.1.5. Refund policy</p>
+-->
+
+
+<a name='C9.2'/>
+<p class='L2'>9.2. Financial Responsibility<a href='#T9.2' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.2.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+Accept no liability at all.
+</p>
+
+<!--
+<a name='9.2.1'/>
+<p class='L3'>9.2.1. Insurance coverage</p>
+<a name='9.2.2'/>
+<p class='L3'>9.2.2. Other assets</p>
+<a name='9.2.3'/>
+<p class='L3'>9.2.3. Insurance or warranty coverage for end-entities</p>
+-->
+
+<a name='C9.3'/>
+<p class='L2'>9.3. Confidentiality of Business Information<a href='#T9.3' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.3.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+<li>KISTI GRID CA collects subscriber's full names and email addresses. Some of this information is used to construct unique, meaningful subject names in the issued certificates.
+<li>Information included in issued certificates and CRLs is not considered confidential.
+<li>KISTI GRID PKI does not collect any kind of confidential information.
+<li>KISTI GRID PKI does not have access to or generate the private keys of a digital signature key pair, such as those used in KISTI GRID identity certificates. These key pairs are generated and managed by the subscribers and are the sole responsibility of the subscribers.
+</ul>
+
+<!--
+<a name='9.3.1'/>
+<p class='L3'>9.3.1. Scope of confidential information</p>
+<a name='9.3.2'/>
+<p class='L3'>9.3.2. Information not within the scope of confidential information</p>
+<a name='9.3.3'/>
+<p class='L3'>9.3.3. Responsibility to protect confidential information</p>
+-->
+
+<a name='C9.4'/>
+<p class='L2'>9.4. Privacy of Personal Information<a href='#T9.4' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.4.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+The subscriber's private information collected for registration are:<br>
+- Name of subscriber<br>
+- Gender of subscriber<br>
+- Country<br>
+- Organization Name<br>
+- Position<br>
+- Telephone<br>
+- Email<br>
+We do not provide this information to other organizations.<br>
+</p>
+
+<!--
+<a name='9.4.1'/>
+<p class='L3'>9.4.1. Privacy plan</p>
+<a name='9.4.2'/>
+<p class='L3'>9.4.2. Information treated as private</p>
+<a name='9.4.3'/>
+<p class='L3'>9.4.3. Information not deemed private</p>
+<a name='9.4.4'/>
+<p class='L3'>9.4.4. Responsibility to protect private information</p>
+<a name='9.4.5'/>
+<p class='L3'>9.4.5. Notice and consent to use private information</p>
+<a name='9.4.6'/>
+<p class='L3'>9.4.6. Disclosure pursuant to judicial or administrative process</p>
+<a name='9.4.7'/>
+<p class='L3'>9.4.7. Other information disclosure circumstances</p>
+-->
+
+<a name='C9.5'/>
+<p class='L2'>9.5. Intellectual Property Rights<a href='#T9.5' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.5.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+All certificate related data issued by KISTI GRID CA is not under any copyright or intellectual property protection.<br>
+</p>
+
+<a name='C9.6'/>
+<p class='L2'>9.6. Representations and Warranties<a href='#T9.6' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.6.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>No stipulation.</p>
+
+<!--
+<a name='9.6.1'/>
+<p class='L3'>9.6.1. CA representations and warranties</p>
+<a name='9.6.2'/>
+<p class='L3'>9.6.2. RA representations and warranties</p>
+<a name='9.6.3'/>
+<p class='L3'>9.6.3. Subscriber representations and warranties</p>
+<a name='9.6.4'/>
+<p class='L3'>9.6.4. Relying party representations and warranties</p>
+<a name='9.6.5'/>
+<p class='L3'>9.6.5. Representations and warranties of other participants</p>
+-->
+
+<a name='C9.7'/>
+<p class='L2'>9.7. Disclaimers of Warranties<a href='#T9.7' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.7.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+No stipulation.
+</p>
+
+<a name='C9.8'/>
+<p class='L2'>9.8. Limitations of Liability<a href='#T9.8' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.8.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+ <li>KISTI GRID PKI issues person certificates according to the practices described in this document.
+ <li>KISTI GRID PKI makes no guarantee about the security or suitability of a service that is identified by a KISTI GRID certificate.
+ <li>The certification service is run with a reasonable level of security, but it is provided on a best effort only basis.
+ <li>It does not warrant its procedures and it will take no responsibility for problems arising from its operation, or for the use made of the certificates it provides.
+ <li>KISTI GRID PKI denies any financial or any other kind of responsibility for damages or impairments resulting from its operation.
+</ul>
+
+
+<a name='C9.9'/>
+<p class='L2'>9.9. Indemnities<a href='#T9.9' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.9.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+No stipulation.
+</p>
+
+<a name='C9.10'/>
+<p class='L2'>9.10. Term and Termination<a href='#T9.10' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.10.' class='rfc'>[RFC3647]</a></p>
+
+<a name='9.10.1'/>
+<p class='L3'>9.10.1. Term</p>
+<p class='text'>
+This CP/CPS is valid and enforceable from the time of accreditation by APGrid PMA.
+</p>
+
+<a name='9.10.2'/>
+<p class='L3'>9.10.2. Termination</p>
+<p class='text'>
+This CP/CPS terminates in the following cases:<br>
+- CA certificate expires<br>
+- CA terminates its service<br>
+- A new version of CP/CPS is accreditated.<br>
+</p>
+
+<a name='9.10.3'/>
+<p class='L3'>9.10.3. Effect of termination and survival</p>
+<p class='text'>
+No stipulation.
+</p>
+
+<a name='C9.11'/>
+<p class='L2'>9.11. Individual notices and communications with participants<a href='#T9.11' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.11.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+No stipulation.
+</p>
+
+<a name='C9.12'/>
+<p class='L2'>9.12. Amendments<a href='#T9.12' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.12.' class='rfc'>[RFC3647]</a></p>
+<ul class='order'>
+ <li>Users will not be warned in advance of changes to the KISTI GRID CA's policy and CPS.
+ <li>Any revision of specification is made by KISTI GRID CA and it is approved by the APGridPMA.
+ <li>Minor editorial changes to this document can be made without approval by the APGridPMA.
+ <li>New OID will not be assigned to the revised document when minor changes would be made.
+ <li>Major changes such as changes in policy or technical security controls need to be approved by the APGrid PMA. New OID will be assigned to the revised document for such major changes would be made.
+</ul>
+
+<!--
+<a name='9.12.1'/>
+<p class='L3'>9.12.1. Procedure for amendment</p>
+<a name='9.12.2'/>
+<p class='L3'>9.12.2. Notification mechanism and period</p>
+<a name='9.12.3'/>
+<p class='L3'>9.12.3. Circumstances under which OID must be changed</p>
+-->
+
+<a name='C9.13'/>
+<p class='L2'>9.13. Dispute Resolution Procedures<a href='#T9.13' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.13.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>No stipulation.</p>
+
+<a name='C9.14'/>
+<p class='L2'>9.14. Governing Law<a href='#T9.14' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.14.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+KISTI GRID CA is subject to Korean law.
+</p>
+
+<a name='C9.15'/>
+<p class='L2'>9.15. Compliance with Applicable Law<a href='#T9.15' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.15.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>
+No stipulation.
+</p>
+
+<a name='C9.16'/>
+<p class='L2'>9.16. Miscellaneous Provisions<a href='#T9.16' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.16.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>No stipulation.</p>
+
+<!--
+<a name='9.16.1'/>
+<p class='L3'>9.16.1. Entire agreement</p>
+<a name='9.16.2'/>
+<p class='L3'>9.16.2. Assignment</p>
+<a name='9.16.3'/>
+<p class='L3'>9.16.3. Severability</p>
+<a name='9.16.4'/>
+<p class='L3'>9.16.4. Enforcement (attorneys' fees and waiver of rights)</p>
+<a name='9.16.5'/>
+<p class='L3'>9.16.5. Force Majeure</p>
+-->
+
+<a name='C9.17'/>
+<p class='L2'>9.17. Other Provisions<a href='#T9.17' class='toc'>[Content]</a>
+<a href='rfc3647.html#s4.9.17.' class='rfc'>[RFC3647]</a></p>
+<p class='text'>No stipulation.</p>
+
+
+
+
+<hr size='1'>
+
+</body>
+</html>

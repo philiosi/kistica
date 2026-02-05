@@ -1,0 +1,91 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 687 (0x2af)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=KR, O=KISTI, O=GRID, CN=KISTI Grid Certificate Authority
+        Validity
+            Not Before: Aug 24 06:32:43 2010 GMT
+            Not After : Aug 24 06:32:43 2011 GMT
+        Subject: C=KR, O=KISTI, O=GRID, O=KISTI, CN=host/wn1012.sdfarm.kr
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:d7:c1:e9:23:03:d6:c6:84:c5:52:96:72:e8:b3:
+                    d5:68:91:90:00:f8:dd:0d:8e:ce:1f:28:f0:20:80:
+                    51:9c:df:db:e2:ae:ed:6f:94:93:d1:86:68:2c:dc:
+                    4b:ca:db:9c:bb:cf:d7:31:5f:a1:19:2d:82:60:39:
+                    8f:67:19:55:81:34:02:91:ab:7d:dd:df:20:e8:2c:
+                    87:d4:cd:c7:fd:4b:8e:82:54:a2:78:0d:91:22:46:
+                    0e:8d:0e:bd:25:7f:a5:38:6d:09:63:58:03:bb:c4:
+                    0a:80:6c:df:e6:51:f9:72:3d:92:53:00:74:09:f2:
+                    32:c2:e8:1a:36:32:2e:58:7d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment, Data Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Key Identifier: 
+                1E:14:84:71:85:41:F2:DE:C7:7D:A8:A6:AA:B9:49:3E:D3:9F:0E:0C
+            X509v3 Authority Key Identifier: 
+                keyid:60:23:F8:5A:1A:BD:43:46:AE:F2:A6:A9:51:37:4C:DA:1A:1D:5F:30
+                DirName:/C=KR/O=KISTI/O=GRID/CN=KISTI Grid Certificate Authority
+                serial:00
+
+            X509v3 CRL Distribution Points: 
+                URI:http://ca.gridcenter.or.kr/CRL/722e5071.crl
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@gridcenter.or.kr, URI:http://ca.gridcenter.or.kr/
+            X509v3 Subject Alternative Name: 
+                DNS:wn1012.sdfarm.kr
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.14305.1.1.1.2.0
+                Policy: 1.2.840.113612.5.2.2.1
+
+    Signature Algorithm: sha1WithRSAEncryption
+        70:52:d9:2c:01:9b:4f:68:45:1a:7b:78:ab:c6:b8:41:8d:48:
+        63:3e:da:66:c7:70:f8:f1:90:b4:5a:04:3c:e9:0a:16:0a:4f:
+        24:11:95:f4:5b:b4:29:08:e4:10:de:27:62:57:05:27:9f:51:
+        22:41:c5:12:ab:29:fd:61:6b:20:e8:4f:d4:07:46:95:6c:f3:
+        86:0d:c2:af:80:71:a3:90:35:13:dd:cd:63:e9:d5:85:8d:f2:
+        31:cf:de:bd:a9:1e:1b:23:a1:1c:1c:9f:f2:02:e7:79:f6:e6:
+        6f:b7:a5:44:d5:dd:c6:ac:16:bc:d5:ac:3e:23:ff:bf:4f:84:
+        4a:c0:ec:df:d5:41:aa:c1:3a:e6:3d:60:07:f5:10:20:cd:55:
+        f2:64:f0:45:55:95:86:6e:27:69:af:43:05:bf:c2:4a:7e:cb:
+        b7:96:5b:f5:33:7e:20:49:68:7f:f4:a1:1b:a5:e8:3a:48:7f:
+        3c:be:50:ec:5a:06:dd:12:ad:15:b7:de:10:10:21:94:7a:1c:
+        9b:a0:e0:b9:b1:25:39:49:9c:5c:36:27:ec:a8:3f:24:de:5d:
+        21:ea:20:4c:5d:f0:9c:99:2f:6c:bc:3c:ae:7a:05:1d:b0:cb:
+        a7:8d:f9:6f:76:63:9b:6a:e0:81:10:44:ea:6e:2b:b7:2c:04:
+        aa:db:4c:3e
+-----BEGIN CERTIFICATE-----
+MIIETzCCAzegAwIBAgICAq8wDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMCS1Ix
+DjAMBgNVBAoTBUtJU1RJMQ0wCwYDVQQKEwRHUklEMSkwJwYDVQQDEyBLSVNUSSBH
+cmlkIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0xMDA4MjQwNjMyNDNaFw0xMTA4
+MjQwNjMyNDNaMFwxCzAJBgNVBAYTAktSMQ4wDAYDVQQKEwVLSVNUSTENMAsGA1UE
+ChMER1JJRDEOMAwGA1UEChMFS0lTVEkxHjAcBgNVBAMTFWhvc3Qvd24xMDEyLnNk
+ZmFybS5rcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA18HpIwPWxoTFUpZy
+6LPVaJGQAPjdDY7OHyjwIIBRnN/b4q7tb5ST0YZoLNxLytucu8/XMV+hGS2CYDmP
+ZxlVgTQCkat93d8g6CyH1M3H/UuOglSieA2RIkYOjQ69JX+lOG0JY1gDu8QKgGzf
+5lH5cj2SUwB0CfIywugaNjIuWH0CAwEAAaOCAaIwggGeMAwGA1UdEwEB/wQCMAAw
+DgYDVR0PAQH/BAQDAgSwMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAd
+BgNVHQ4EFgQUHhSEcYVB8t7HfaimqrlJPtOfDgwwfwYDVR0jBHgwdoAUYCP4Whq9
+Q0au8qapUTdM2hodXzChW6RZMFcxCzAJBgNVBAYTAktSMQ4wDAYDVQQKEwVLSVNU
+STENMAsGA1UEChMER1JJRDEpMCcGA1UEAxMgS0lTVEkgR3JpZCBDZXJ0aWZpY2F0
+ZSBBdXRob3JpdHmCAQAwPAYDVR0fBDUwMzAxoC+gLYYraHR0cDovL2NhLmdyaWRj
+ZW50ZXIub3Iua3IvQ1JMLzcyMmU1MDcxLmNybDA7BgNVHRIENDAygRNjYUBncmlk
+Y2VudGVyLm9yLmtyhhtodHRwOi8vY2EuZ3JpZGNlbnRlci5vci5rci8wGwYDVR0R
+BBQwEoIQd24xMDEyLnNkZmFybS5rcjAnBgNVHSAEIDAeMA4GDCsGAQQB72EBAQEC
+ADAMBgoqhkiG90wFAgIBMA0GCSqGSIb3DQEBBQUAA4IBAQBwUtksAZtPaEUae3ir
+xrhBjUhjPtpmx3D48ZC0WgQ86QoWCk8kEZX0W7QpCOQQ3idiVwUnn1EiQcUSqyn9
+YWsg6E/UB0aVbPOGDcKvgHGjkDUT3c1j6dWFjfIxz969qR4bI6EcHJ/yAud59uZv
+t6VE1d3GrBa81aw+I/+/T4RKwOzf1UGqwTrmPWAH9RAgzVXyZPBFVZWGbidpr0MF
+v8JKfsu3llv1M34gSWh/9KEbpeg6SH88vlDsWgbdEq0Vt94QECGUehyboOC5sSU5
+SZxcNifsqD8k3l0h6iBMXfCcmS9svDyuegUdsMunjflvdmObauCBEETqbiu3LASq
+20w+
+-----END CERTIFICATE-----

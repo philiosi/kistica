@@ -1,0 +1,6 @@
+deny from all
+
+AuthName	"Root Login"
+AuthType	Basic
+AuthUserFile	"/etc/httpd/.htpasswd"
+require		valid-user

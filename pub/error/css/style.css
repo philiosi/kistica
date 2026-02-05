@@ -1,0 +1,226 @@
+
+body {
+ font-size:80%;
+ color:#000000;
+ background-color:#fafafa;
+ margin:10px;
+}
+
+.content {
+	max-width: 800px;
+	margin-left: 15%;
+	margin-right: 20%;
+}
+
+body,p,td,ul,textarea,input { font-family: Verdana; }
+
+table,input,textarea { font-size: 100%; }
+
+
+td.menu1 { background:#cccccc; padding:5px 5px 5px 5px; }
+a.menu1       { display:block; text-align:left; }
+a.menu1:hover { display:block; text-decoration:underline; font-weight:bold; }
+td.menu2 { background:#cccccc; padding:5px 5px 5px 5px; }
+a.menu2       { display:block; text-align:left; margin:0px 0px 0px 10px; }
+a.menu2:hover { display:block; text-decoration:underline; font-weight:bold; }
+
+div.message1 { padding:5 5 5 5px; color:#00AA00; }
+div.message2 { padding:5 5 5 5px; color:#ff0000; }
+div.message3 { padding:5 5 5 5px; color:#BF4064; }
+
+ul { 
+	margin:0 0 0 20px; 
+	font-family:arial; 
+	line-height:200%; 
+	padding-left:0px;
+ }
+
+
+table.issued td.a { text-align:center; background:#cccccc; padding:3px 9px 3px 9px; }
+table.issued td.b { text-align:left;   background:#ffffff; padding:3px 9px 3px 9px; }
+
+/* set millions of background images */
+.rbroundbox { background: url(nt.gif) repeat; }
+.rbtop div { background: url(tl.gif) no-repeat top left; }
+.rbtop { background: url(tr.gif) no-repeat top right; }
+.rbbot div { background: url(bl.gif) no-repeat bottom left; }
+.rbbot { background: url(br.gif) no-repeat bottom right; }
+
+/* height and width stuff, width not really nessisary. */
+.rbtop div, .rbtop, .rbbot div, .rbbot {
+width: 100%;
+height: 7px;
+font-size: 1px;
+}
+.rbcontent { margin: 0px 7px; }
+.rbroundbox { width:	100%; margin: 0 auto; }
+
+/*********** div ****************/
+.dbase {
+	border: solid 0px;
+	display: inline;
+	padding: 2px;
+	margin: 5px;
+	width: 100%;
+}
+
+
+.block {
+	display: block;
+}
+
+/*********** font ***************/
+.ftitle {
+	font-size: x-large;
+	
+}
+
+.fsub {
+	font-size: large;
+}
+
+
+/*********** Table **************/
+.bTable {
+	
+	border: 0;
+	width:	800px;
+	text-align: center;
+}
+
+/********** width height **************/
+.wFull {
+	width: 100%;
+}
+.w1100 {
+	width: 1100px;
+}
+
+.w900 {
+	width: 900px;
+}
+
+.w800 {
+	width: 800px;
+}
+
+.w200 {
+	width: 200px;
+}
+
+.w600 {
+	width: 600px;
+}
+
+.h65 {
+	height: 65px;
+}
+
+.h400 {
+	height: 400px;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pline200 {
+	line-height: 200%;
+}
+.pline180 {
+	line-height: 180%;
+}
+.pline160 {
+	line-height: 160%;
+}
+.pline140 {
+	line-height: 140%;
+}
+.pline40 {
+	line-height: 40%;
+}
+
+
+
+.vtop {
+	vertical-align: top;
+}
+.vmiddle {
+	vertical-align: middle;
+}
+.vbottom {
+	vertical-align: bottom;
+}
+
+.cellp1 {
+	padding: 1px 1px 1px 1px;
+}
+
+.cellp10 {
+	padding: 10px;
+}
+
+.bspace1 {
+	border-spacing: 1px;
+}
+
+.borderbase {
+	border-style: solid;
+	border-spacing: 3px;
+	border-color: #cccccc;
+}
+
+.imgbase {
+	width:	20px;
+	height:	20px;
+	vertical-align:	middle;
+	border:	0px;
+	padding: 0px 5px 0px 0px;
+}
+
+
+/******** bg color ***************/
+.bgeee {
+	background-color: #eeeeee;
+}
+
+.bgf0 {
+	background-color: #f0f0f0;
+}
+
+
+li {
+	text-align: left;
+	margin: 10px 0px 0px 0px;
+}
+
+#limenu {
+	margin: 0px 0px 0px 0px;
+}
+
+td { text-align: center; }
+
+
+a:link    { text-decoration:underline; color:#008800; }
+a:visited { text-decoration:underline; color:#008800; }
+a:hover   { text-decoration:underline; color:#880000; }
+
+a.menu:link    { text-decoration:none; color:#333333; }
+a.menu:visited { text-decoration:none; color:#333333; }
+a.menu:hover   { text-decoration:underline; color:#333333; }
+
+#nodeco { text-decoration: none; }
+/*
+body,td,pre {
+  color: black;
+  font-family: Verdana,Arial,Helvetica;
+  font-size: x-small;
+}
+*/

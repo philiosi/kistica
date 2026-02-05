@@ -1,0 +1,123 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4431 (0x114f)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=KR, O=KISTI, CN=KISTI Certification Authority
+        Validity
+            Not Before: Jan 16 04:43:58 2023 GMT
+            Not After : Feb 20 04:43:58 2024 GMT
+        Subject: C=KR, O=KISTI, O=UNIVERSITY OF SEOUL, CN=host/cms.sscc.uos.ac.kr
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:ba:a7:2b:fd:13:9a:77:55:13:8b:24:23:2e:f4:
+                    da:57:08:2d:57:05:9f:8a:14:d2:5a:db:17:2b:bb:
+                    c0:07:ea:91:07:ca:dd:0f:39:95:3f:db:c2:e9:2f:
+                    4e:a4:5e:50:b4:05:ec:d2:29:db:7e:ff:80:e6:26:
+                    41:1c:10:1c:37:8a:82:01:88:2e:8e:39:b1:19:51:
+                    58:3b:26:90:28:a6:eb:ca:69:9a:cc:f8:94:bf:75:
+                    11:ee:cc:db:62:ff:13:d8:1b:8f:ce:8b:40:95:8d:
+                    e7:9a:17:bb:3b:29:07:3d:2a:2b:aa:ea:57:1e:dd:
+                    d0:d2:56:b8:2a:ad:24:a4:8d:1d:16:26:66:84:3f:
+                    55:ab:8d:b8:fe:3d:ae:72:18:0c:b8:64:7b:3c:9d:
+                    d2:c8:9d:bb:74:b8:e5:f4:f6:f9:42:ee:0b:a1:13:
+                    18:8b:4b:39:7c:4d:69:ce:aa:17:4b:05:28:66:c8:
+                    90:cf:82:ab:16:d1:c3:5a:c3:01:5f:32:8e:be:ef:
+                    c4:88:69:79:7b:4f:60:12:9e:c1:b9:19:de:0d:98:
+                    b2:f7:8b:58:9b:b8:0d:dc:75:90:0c:39:7e:28:b1:
+                    e4:14:4e:7e:5a:cc:ad:a9:0b:0c:39:fe:d2:4c:66:
+                    36:23:fc:5c:09:d6:b7:4a:e8:58:9d:ea:b3:fa:72:
+                    ea:1d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment, Data Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Key Identifier: 
+                9E:DD:B1:3F:08:92:17:2A:DD:D3:28:B1:BB:E5:01:2F:86:1A:50:82
+            X509v3 Authority Key Identifier: 
+                keyid:8E:29:7F:F6:09:E6:86:1D:92:2B:8B:88:F3:FF:08:01:89:DB:46:6E
+                DirName:/C=KR/O=KISTI/CN=KISTI Certification Authority
+                serial:F4:04:FC:2B:16:25:1B:A0
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ca.gridcenter.or.kr/CRL/kisti-ca-v3.crl
+
+            X509v3 Issuer Alternative Name: 
+                email:kisti-grid-ca@kisti.re.kr, URI:http://ca.gridcenter.or.kr/
+            X509v3 Subject Alternative Name: 
+                DNS:cms.sscc.uos.ac.kr
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.14305.1.2.1.3.0
+                Policy: 1.2.840.113612.5.2.2.1
+
+    Signature Algorithm: sha256WithRSAEncryption
+         b3:40:91:e9:fa:f6:55:ff:0d:e7:1e:37:20:6f:31:53:e0:bf:
+         c9:fa:8e:91:dc:45:59:03:4c:f8:c3:f2:d8:43:b8:6f:78:d9:
+         e3:6f:db:b1:84:b0:1b:79:73:72:3a:ea:73:bd:69:93:d0:4e:
+         1e:86:d4:54:6d:34:4c:27:e2:a5:38:7a:57:4c:4e:65:5f:ca:
+         6c:1a:a0:ac:a3:38:5b:b6:2d:84:88:c1:a9:74:c6:69:a4:b5:
+         a5:1d:b2:e5:cd:0a:ac:cd:23:99:87:b8:44:12:0d:cc:28:bd:
+         d4:af:c9:89:c8:7e:94:0e:6b:aa:a2:83:dd:99:1e:25:aa:15:
+         91:87:b8:85:e5:7e:e0:96:11:46:47:63:4e:65:86:35:fe:26:
+         84:f7:c4:1c:1e:20:1c:11:96:30:1b:7e:37:39:8c:d1:56:9d:
+         2e:3a:11:0b:9f:e6:ba:7a:0e:2b:37:a6:4b:6f:a8:a2:ae:b8:
+         76:30:a1:1c:0e:13:80:a4:54:c6:dd:aa:5b:97:ea:2f:9b:28:
+         cb:06:1d:d9:72:10:ab:90:24:45:29:48:3d:fe:ab:0c:b9:c3:
+         e8:be:d3:7d:5b:16:24:74:85:e9:56:2f:87:d5:27:37:4e:af:
+         ac:0d:5e:67:70:a5:94:03:d0:a4:a0:be:db:1c:9a:65:3c:a0:
+         68:fc:f0:1d:6e:43:07:12:19:45:08:c8:4a:19:9b:96:d6:5f:
+         e4:38:78:05:43:3d:d1:76:5b:85:21:d7:1b:4e:d5:80:1d:9b:
+         5e:4f:1b:a9:28:3d:c4:c9:a8:8a:53:e3:fc:84:4f:18:f2:7e:
+         1f:3c:cf:e5:6a:9e:33:a9:1a:4c:2c:0c:53:82:00:42:0e:48:
+         c3:21:9c:4b:2f:c9:41:2c:b2:53:95:4d:ff:31:0c:04:d6:11:
+         d2:61:99:cf:c1:71:28:88:39:83:14:61:fd:ef:9b:80:53:9b:
+         58:66:48:c1:29:d7:31:fd:4e:e1:3b:00:32:09:42:48:7e:33:
+         4d:99:2d:b4:72:c7:00:57:2a:62:8c:7a:5d:47:aa:19:41:da:
+         98:67:e0:30:f1:aa:70:01:9e:60:b7:06:86:87:ec:ef:64:90:
+         1b:7d:4f:21:36:3a:1c:b1:48:50:77:54:6b:68:63:c6:8b:8e:
+         ac:d7:cb:cc:05:d8:15:44:88:7a:16:5d:6a:b2:0a:f9:45:49:
+         ce:06:e5:63:ba:07:d8:89:0c:79:0d:a6:e9:e7:91:04:2a:54:
+         08:80:c3:b5:0b:37:43:6f:64:13:e1:d5:16:29:f8:92:9d:7c:
+         3f:dc:c1:ce:81:e8:8b:c2:41:02:41:0c:61:83:3f:b9:9c:b9:
+         79:db:3e:0a:f6:06:ea:f0
+-----BEGIN CERTIFICATE-----
+MIIFwzCCA6ugAwIBAgICEU8wDQYJKoZIhvcNAQELBQAwRTELMAkGA1UEBhMCS1Ix
+DjAMBgNVBAoTBUtJU1RJMSYwJAYDVQQDEx1LSVNUSSBDZXJ0aWZpY2F0aW9uIEF1
+dGhvcml0eTAeFw0yMzAxMTYwNDQzNThaFw0yNDAyMjAwNDQzNThaMF0xCzAJBgNV
+BAYTAktSMQ4wDAYDVQQKDAVLSVNUSTEcMBoGA1UECgwTVU5JVkVSU0lUWSBPRiBT
+RU9VTDEgMB4GA1UEAwwXaG9zdC9jbXMuc3NjYy51b3MuYWMua3IwggEiMA0GCSqG
+SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC6pyv9E5p3VROLJCMu9NpXCC1XBZ+KFNJa
+2xcru8AH6pEHyt0POZU/28LpL06kXlC0BezSKdt+/4DmJkEcEBw3ioIBiC6OObEZ
+UVg7JpAopuvKaZrM+JS/dRHuzNti/xPYG4/Oi0CVjeeaF7s7KQc9Kiuq6lce3dDS
+VrgqrSSkjR0WJmaEP1Wrjbj+Pa5yGAy4ZHs8ndLInbt0uOX09vlC7guhExiLSzl8
+TWnOqhdLBShmyJDPgqsW0cNawwFfMo6+78SIaXl7T2ASnsG5Gd4NmLL3i1ibuA3c
+dZAMOX4oseQUTn5azK2pCww5/tJMZjYj/FwJ1rdK6Fid6rP6cuodAgMBAAGjggGj
+MIIBnzAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIEsDAdBgNVHSUEFjAUBggr
+BgEFBQcDAQYIKwYBBQUHAwIwHQYDVR0OBBYEFJ7dsT8Ikhcq3dMosbvlAS+GGlCC
+MHUGA1UdIwRuMGyAFI4pf/YJ5oYdkiuLiPP/CAGJ20ZuoUmkRzBFMQswCQYDVQQG
+EwJLUjEOMAwGA1UEChMFS0lTVEkxJjAkBgNVBAMTHUtJU1RJIENlcnRpZmljYXRp
+b24gQXV0aG9yaXR5ggkA9AT8KxYlG6AwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cDov
+L2NhLmdyaWRjZW50ZXIub3Iua3IvQ1JML2tpc3RpLWNhLXYzLmNybDBBBgNVHRIE
+OjA4gRlraXN0aS1ncmlkLWNhQGtpc3RpLnJlLmtyhhtodHRwOi8vY2EuZ3JpZGNl
+bnRlci5vci5rci8wHQYDVR0RBBYwFIISY21zLnNzY2MudW9zLmFjLmtyMCcGA1Ud
+IAQgMB4wDgYMKwYBBAHvYQECAQMAMAwGCiqGSIb3TAUCAgEwDQYJKoZIhvcNAQEL
+BQADggIBALNAken69lX/DeceNyBvMVPgv8n6jpHcRVkDTPjD8thDuG942eNv27GE
+sBt5c3I66nO9aZPQTh6G1FRtNEwn4qU4eldMTmVfymwaoKyjOFu2LYSIwal0xmmk
+taUdsuXNCqzNI5mHuEQSDcwovdSvyYnIfpQOa6qig92ZHiWqFZGHuIXlfuCWEUZH
+Y05lhjX+JoT3xBweIBwRljAbfjc5jNFWnS46EQuf5rp6Dis3pktvqKKuuHYwoRwO
+E4CkVMbdqluX6i+bKMsGHdlyEKuQJEUpSD3+qwy5w+i+031bFiR0helWL4fVJzdO
+r6wNXmdwpZQD0KSgvtscmmU8oGj88B1uQwcSGUUIyEoZm5bWX+Q4eAVDPdF2W4Uh
+1xtO1YAdm15PG6koPcTJqIpT4/yETxjyfh88z+VqnjOpGkwsDFOCAEIOSMMhnEsv
+yUEsslOVTf8xDATWEdJhmc/BcSiIOYMUYf3vm4BTm1hmSMEp1zH9TuE7ADIJQkh+
+M02ZLbRyxwBXKmKMel1HqhlB2phn4DDxqnABnmC3BoaH7O9kkBt9TyE2OhyxSFB3
+VGtoY8aLjqzXy8wF2BVEiHoWXWqyCvlFSc4G5WO6B9iJDHkNpunnkQQqVAiAw7UL
+N0NvZBPh1RYp+JKdfD/cwc6B6IvCQQJBDGGDP7mcuXnbPgr2Burw
+-----END CERTIFICATE-----

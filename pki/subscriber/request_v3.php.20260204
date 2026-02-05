@@ -1,0 +1,29 @@
+<?php
+
+include('common_v3.php');
+include("head.php");
+
+$title = "Request Certificate";
+ParagraphTitle($title);
+
+
+  print<<<EOS
+<b>KISTI CA (v3.0)</b> <br>
+<br>
+
+- If you are applying for a <b>user certificate</b>, <a href='request_user_cert_v3.php'><b>User Certificate Request</b></a><br>
+<p>
+<div class="message3"><p style="line-height:160%; margin:0 0 0 15px;"> * NOW This function SUPPORT ALL KIND OF BROWSERS such as <I>Google Chrome, Edge, FireFox and Safari, etc. IE(Internet Explorer) mode of Edge no longer necessary.</I></p></div>
+<div class="message3"><p style="line-height:160%; margin:0 0 0 15px;"> ** [DO NOT FORGET!] After uploading your CSR, you can download your private key file (csrid_privateKey.pem) from the result page.</I></p></div>
+</p>
+<br>
+- If you are applying for a <b>host/service certificate</b>, <a href='request_host_cert_v3.php'><b>Host Certificate Request</b></a><br>
+
+
+<br>
+
+EOS;
+
+  include("tail.php");
+
+?>

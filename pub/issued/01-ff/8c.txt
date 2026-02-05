@@ -1,0 +1,89 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 140 (0x8c)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=KR, O=KISTI, O=GRID, CN=KISTI Grid Certificate Authority
+        Validity
+            Not Before: Jul 11 06:13:33 2008 GMT
+            Not After : Jul 11 06:13:33 2009 GMT
+        Subject: C=KR, O=KISTI, O=GRID, O=KISTI, CN=escience11.snu.ac.kr
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:bb:cc:b4:c0:5c:af:aa:3e:2c:be:c6:68:f7:4d:
+                    fa:da:93:43:1e:45:21:58:d8:f0:e4:f9:30:5e:7e:
+                    eb:18:6d:36:6e:ce:81:77:4c:d3:e3:ee:4e:58:0b:
+                    d4:7c:53:73:82:2d:d9:cc:d8:5e:fe:ea:7e:30:20:
+                    f6:f4:f6:be:a5:e7:2a:40:d9:84:31:8a:11:0c:83:
+                    4d:02:dd:f4:a1:2b:c7:97:f2:4a:3a:7b:a1:21:c2:
+                    ec:24:27:82:86:10:a3:58:f9:8a:af:93:a0:46:d9:
+                    a2:c9:55:65:95:27:81:6f:30:05:0d:de:c1:df:2a:
+                    34:b0:d2:0f:ea:d1:46:cd:17
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment, Data Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Key Identifier: 
+                40:8F:36:A5:77:CA:2A:1B:AC:DE:F4:30:DA:99:14:B8:36:19:23:27
+            X509v3 Authority Key Identifier: 
+                keyid:60:23:F8:5A:1A:BD:43:46:AE:F2:A6:A9:51:37:4C:DA:1A:1D:5F:30
+                DirName:/C=KR/O=KISTI/O=GRID/CN=KISTI Grid Certificate Authority
+                serial:00
+
+            X509v3 CRL Distribution Points: 
+                URI:http://ca.gridcenter.or.kr/CRL/
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@gridcenter.or.kr, URI:http://ca.gridcenter.or.kr/
+            X509v3 Subject Alternative Name: 
+                DNS:escience11.snu.ac.kr
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.14305.1.1.1.2.0
+
+    Signature Algorithm: sha1WithRSAEncryption
+        86:e4:d3:ac:54:0b:50:15:af:99:7e:3a:97:8e:d4:06:19:ef:
+        a5:a3:4c:c8:ea:53:6a:3c:c1:fc:15:25:3a:b1:19:55:a8:99:
+        a5:28:e6:d5:1b:a4:aa:15:79:c0:c5:4b:a3:e9:63:11:e3:7b:
+        46:0d:1e:8a:20:a8:5c:a3:3c:96:b7:30:a4:02:0a:59:04:55:
+        74:f7:2a:1d:71:0e:8a:c8:ef:91:f1:76:fb:82:fe:5f:6f:f2:
+        14:32:79:4d:bb:26:40:d8:1c:f4:c9:62:3d:c4:c6:4b:79:65:
+        c6:70:95:a1:9a:3a:9f:5d:ca:82:65:ea:a7:c8:e0:78:2a:98:
+        8f:06:a1:c6:46:c2:8f:6b:96:b9:14:2f:ac:6f:3f:94:24:ba:
+        0a:22:3e:ac:30:65:a2:ba:28:bc:b5:4d:11:c5:15:a4:a6:10:
+        0a:df:7b:a0:b3:20:5a:31:46:94:e5:f3:d1:cb:4c:5b:a8:71:
+        8f:a6:90:72:05:26:ac:9d:aa:ff:76:24:ef:a2:26:21:e5:d0:
+        50:6f:34:9c:ec:7c:b0:34:30:e9:b1:41:bb:f8:1f:c0:aa:20:
+        1c:1a:bb:c6:b0:48:20:ab:a2:b6:f2:25:03:f4:b6:a5:4f:95:
+        c5:db:1e:48:32:72:40:b2:9a:73:22:f0:cc:21:bf:f7:e7:b0:
+        eb:2b:a7:70
+-----BEGIN CERTIFICATE-----
+MIIEODCCAyCgAwIBAgICAIwwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMCS1Ix
+DjAMBgNVBAoTBUtJU1RJMQ0wCwYDVQQKEwRHUklEMSkwJwYDVQQDEyBLSVNUSSBH
+cmlkIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0wODA3MTEwNjEzMzNaFw0wOTA3
+MTEwNjEzMzNaMFsxCzAJBgNVBAYTAktSMQ4wDAYDVQQKEwVLSVNUSTENMAsGA1UE
+ChMER1JJRDEOMAwGA1UEChMFS0lTVEkxHTAbBgNVBAMTFGVzY2llbmNlMTEuc251
+LmFjLmtyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7zLTAXK+qPiy+xmj3
+Tfrak0MeRSFY2PDk+TBefusYbTZuzoF3TNPj7k5YC9R8U3OCLdnM2F7+6n4wIPb0
+9r6l5ypA2YQxihEMg00C3fShK8eX8ko6e6EhwuwkJ4KGEKNY+Yqvk6BG2aLJVWWV
+J4FvMAUN3sHfKjSw0g/q0UbNFwIDAQABo4IBjDCCAYgwDAYDVR0TAQH/BAIwADAO
+BgNVHQ8BAf8EBAMCBLAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0G
+A1UdDgQWBBRAjzald8oqG6ze9DDamRS4NhkjJzB/BgNVHSMEeDB2gBRgI/haGr1D
+Rq7ypqlRN0zaGh1fMKFbpFkwVzELMAkGA1UEBhMCS1IxDjAMBgNVBAoTBUtJU1RJ
+MQ0wCwYDVQQKEwRHUklEMSkwJwYDVQQDEyBLSVNUSSBHcmlkIENlcnRpZmljYXRl
+IEF1dGhvcml0eYIBADAwBgNVHR8EKTAnMCWgI6Ahhh9odHRwOi8vY2EuZ3JpZGNl
+bnRlci5vci5rci9DUkwvMDsGA1UdEgQ0MDKBE2NhQGdyaWRjZW50ZXIub3Iua3KG
+G2h0dHA6Ly9jYS5ncmlkY2VudGVyLm9yLmtyLzAfBgNVHREEGDAWghRlc2NpZW5j
+ZTExLnNudS5hYy5rcjAZBgNVHSAEEjAQMA4GDCsGAQQB72EBAQECADANBgkqhkiG
+9w0BAQUFAAOCAQEAhuTTrFQLUBWvmX46l47UBhnvpaNMyOpTajzB/BUlOrEZVaiZ
+pSjm1RukqhV5wMVLo+ljEeN7Rg0eiiCoXKM8lrcwpAIKWQRVdPcqHXEOisjvkfF2
++4L+X2/yFDJ5TbsmQNgc9MliPcTGS3llxnCVoZo6n13KgmXqp8jgeCqYjwahxkbC
+j2uWuRQvrG8/lCS6CiI+rDBloroovLVNEcUVpKYQCt97oLMgWjFGlOXz0ctMW6hx
+j6aQcgUmrJ2q/3Yk76ImIeXQUG80nOx8sDQw6bFBu/gfwKogHBq7xrBIIKuitvIl
+A/S2pU+VxdseSDJyQLKacyLwzCG/9+ew6yuncA==
+-----END CERTIFICATE-----

@@ -1,0 +1,33 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 0 (0x0)
+        Signature Algorithm: md5WithRSAEncryption
+        Issuer: C=KR, O=Globus, CN=KISTI Supercomputing Center CA2
+        Validity
+            Not Before: Mar 17 00:39:41 2003 GMT
+            Not After : Mar 14 00:39:41 2013 GMT
+        Subject: C=KR, O=Globus, CN=KISTI Supercomputing Center CA2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:d5:75:99:e4:a2:a2:3f:28:95:7e:c0:68:e9:0a:
+                    61:f0:e3:3a:ff:aa:2d:38:b8:0a:11:3a:d0:50:03:
+                    13:ec:4a:7f:57:54:a8:89:7c:b9:25:35:a5:e3:87:
+                    47:ef:6c:70:29:21:20:0c:98:7a:c2:fc:55:6d:2c:
+                    2b:63:2c:45:c4:ff:25:92:44:9a:85:e4:c5:39:c7:
+                    5c:b2:2e:5b:eb:08:0e:33:6b:47:7b:0b:01:f2:34:
+                    59:f9:1d:d2:10:85:d8:cf:ac:32:92:41:7d:72:41:
+                    f6:ee:65:f6:ab:ed:28:90:f3:c1:2e:2b:cc:de:4c:
+                    07:66:0f:6a:0a:0b:5e:42:99
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: md5WithRSAEncryption
+        43:88:79:ec:48:5d:2e:b8:5b:87:b0:26:38:4c:09:04:61:14:
+        8f:df:2d:40:52:d2:2a:3d:03:d4:51:60:46:71:1d:a3:bd:e6:
+        3a:40:2b:01:3a:2e:c9:13:c5:97:1e:29:12:55:b1:19:dd:37:
+        6d:50:6a:40:a0:37:ce:90:b3:96:ee:a6:03:02:dc:10:7c:9a:
+        72:0f:c2:f7:55:f3:f2:0c:ae:02:6c:4c:39:05:29:9d:e3:eb:
+        a2:fd:ea:35:3e:7f:4b:a2:ed:a1:a9:bc:1d:98:94:fd:64:1c:
+        b9:89:ac:09:72:65:40:28:15:52:9a:d0:fd:6e:00:08:88:9d:
+        b2:8f

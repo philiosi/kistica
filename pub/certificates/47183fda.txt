@@ -1,0 +1,68 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 0 (0x0)
+        Signature Algorithm: md5WithRSAEncryption
+        Issuer: C=KR, O=KISTI, CN=KISTI GRID ROOT CA
+        Validity
+            Not Before: Jun  1 02:25:41 2004 GMT
+            Not After : May 31 02:25:41 2009 GMT
+        Subject: C=KR, O=KISTI, CN=KISTI GRID ROOT CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:aa:66:46:3f:96:68:2f:1b:d8:71:0b:c8:b0:ed:
+                    cf:92:ea:5e:b5:08:94:cc:4b:54:e1:70:4f:f3:66:
+                    75:cd:65:4f:d4:c2:c2:e1:ab:5a:85:b3:8f:66:ca:
+                    0f:14:e8:88:94:55:a1:69:3f:63:b0:8e:64:3a:f7:
+                    ca:30:af:2b:1d:8a:af:90:58:6f:77:8e:48:45:92:
+                    25:39:ee:42:4c:20:f9:0e:6e:fb:ed:b2:7d:77:9f:
+                    1c:75:37:c0:c9:26:5a:42:14:95:67:5b:e0:51:ef:
+                    2e:f5:8d:81:34:79:d9:58:6b:4c:cf:ed:a2:75:0b:
+                    df:68:e2:ac:be:21:99:8e:56:1a:e7:1d:ee:b9:70:
+                    e1:d1:be:11:89:69:c2:59:1c:9d:47:3d:2a:78:de:
+                    3f:db:50:62:c8:3d:e4:cf:89:6d:1d:59:2d:b7:39:
+                    30:ab:a4:d1:e2:69:41:0b:d9:a8:1b:4a:0c:31:30:
+                    8b:68:82:2b:18:3c:4b:85:7e:3b:c4:48:eb:87:a3:
+                    58:d8:11:d1:f6:81:f7:ff:cb:ba:7b:14:f5:72:47:
+                    4a:a8:ec:d3:4f:8a:fe:56:eb:3e:ad:2e:b6:4c:0e:
+                    59:a4:75:23:cd:58:e5:7b:50:4d:8c:18:b1:f5:b6:
+                    88:73:2c:8c:59:00:8c:71:98:87:67:9b:e8:cf:08:
+                    27:63
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+            CA:TRUE
+            X509v3 Key Usage: 
+            Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+            27:4D:64:83:E2:AD:CD:FA:C8:E6:70:1F:81:07:47:2F:19:A1:1E:DE
+            X509v3 Authority Key Identifier: 
+            keyid:27:4D:64:83:E2:AD:CD:FA:C8:E6:70:1F:81:07:47:2F:19:A1:1E:DE
+            DirName:/C=KR/O=KISTI/CN=KISTI GRID ROOT CA
+            serial:00
+
+            X509v3 CRL Distribution Points: 
+            URI:http://ca.gridcenter.or.kr/CRL/
+
+            X509v3 Subject Alternative Name: 
+            email:ca@gridcenter.or.kr, URI:http://ca.gridcenter.or.kr/
+            X509v3 Issuer Alternative Name: 
+            email:ca@gridcenter.or.kr, URI:http://ca.gridcenter.or.kr/
+    Signature Algorithm: md5WithRSAEncryption
+        4f:07:b0:a4:6c:85:75:a3:0a:83:56:8b:0b:e7:81:31:d6:8c:
+        eb:fa:26:0e:2e:ba:c1:56:36:4e:45:c7:6c:cb:4b:f4:ac:0a:
+        67:8b:60:8b:f5:be:11:ee:ca:6a:9a:ef:4a:b8:d0:2a:1d:3c:
+        71:a9:4b:b7:dc:d2:1c:20:fa:15:1e:e4:e2:91:11:71:e3:a5:
+        f9:58:07:bc:79:a0:2e:42:8b:b3:8d:b3:ca:d1:47:03:64:41:
+        ce:8f:da:78:b1:9b:a8:ce:49:b9:3d:f2:49:aa:23:04:d4:f0:
+        e9:5c:77:70:9e:90:80:bf:5f:a8:80:26:b5:f6:a7:9c:71:aa:
+        65:5f:11:18:74:43:89:a2:dd:cf:67:ce:76:49:04:74:b3:8f:
+        2e:90:64:d9:d5:40:b0:ec:1a:6b:f5:0a:8f:42:aa:c7:24:f0:
+        75:b3:d3:51:0d:3b:4a:ab:71:16:8b:23:8d:d6:bf:e8:72:31:
+        b1:31:59:f5:a7:80:4a:fe:02:43:ec:a0:4a:b2:36:3c:65:5a:
+        c4:0a:01:d7:0b:bc:44:f5:3e:4b:5e:5f:05:97:c8:ef:2b:82:
+        2a:0b:73:f6:b9:85:20:30:ae:d6:4e:9a:90:40:50:3b:9c:76:
+        f1:8a:ee:52:c1:c5:a2:3f:8a:26:5e:4b:cd:c7:f6:03:f3:01:
+        32:32:ac:f4

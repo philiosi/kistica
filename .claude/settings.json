@@ -1,0 +1,45 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "bash .claude/hooks/load-project-context.sh"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "bash .claude/hooks/post-edit-reminder.sh",
+        "matcher": {
+          "tool_name": ["Edit", "Write"]
+        }
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Edit pki/**/*.php",
+      "Edit pub/**/*.php",
+      "Edit include/**/*.php",
+      "Edit config/**/*.php",
+      "Edit db/**/*.sql",
+      "Edit **/*.css",
+      "Edit **/*.js",
+      "Write .claude/**/*",
+      "Bash php -l *",
+      "Bash mysql *"
+    ],
+    "deny": [
+      "Edit **/certificates/**",
+      "Edit **/CRL/**",
+      "Edit **/*.pem",
+      "Edit **/*.key"
+    ]
+  },
+  "context": {
+    "include": [
+      "CLAUDE.md",
+      ".claude/cache/project-context.md"
+    ]
+  }
+}

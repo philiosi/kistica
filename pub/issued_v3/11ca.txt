@@ -1,0 +1,90 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4554 (0x11ca)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=KR, O=KISTI, CN=KISTI Certification Authority
+        Validity
+            Not Before: Dec 10 04:21:27 2024 GMT
+            Not After : Jan 14 04:21:27 2026 GMT
+        Subject: C=KR, O=KISTI, O=KISTI, CN=host/cms-t2-se01.sdfarm.kr
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:93:64:48:c4:1a:d5:70:53:7b:5c:aa:19:4d:9f:
+                    22:73:e2:55:58:db:85:51:af:d7:8f:a1:07:49:ba:
+                    d4:f4:73:6b:d7:f3:d2:23:23:a7:a1:43:35:79:4e:
+                    3e:7c:9b:ce:dc:26:62:60:50:c0:4b:be:81:3e:49:
+                    0c:92:d9:42:98:3d:4e:f0:7d:cd:d0:89:71:4c:21:
+                    81:ae:f7:b2:49:d2:78:d1:ad:17:d1:18:dc:a6:a1:
+                    a5:dd:05:14:e6:5d:6e:36:fa:7f:12:4c:42:09:7c:
+                    ab:c6:a5:49:a8:6f:6c:fc:17:4c:7c:0c:9f:8c:33:
+                    c6:82:0e:c4:3e:03:95:3e:cb:1f:bb:a5:53:9d:c5:
+                    86:ff:d5:5c:f1:d3:de:52:e0:a0:3d:69:38:44:75:
+                    72:73:39:51:8c:f3:c1:a8:32:91:89:70:d3:6b:b1:
+                    0f:3b:09:39:e2:6a:81:60:f5:36:d2:a8:33:44:71:
+                    48:f2:e7:b7:5f:83:7d:3e:27:51:2e:d8:4a:3b:eb:
+                    88:93:b8:bf:60:90:dd:10:53:c9:ae:d3:f9:9a:44:
+                    ed:c5:f3:78:42:ad:32:a9:94:ee:97:e3:b3:2f:e8:
+                    cb:66:9b:86:12:31:9a:01:c9:4d:64:ba:ed:53:f1:
+                    fd:3e:c0:e6:dc:2d:34:4d:6b:0c:c6:f2:ea:7a:33:
+                    2c:57
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment, Data Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Key Identifier: 
+                24:A0:FD:27:9A:F8:96:BA:9B:81:99:BB:DF:3D:7E:86:FC:87:3C:FC
+            X509v3 Authority Key Identifier: 
+                keyid:8E:29:7F:F6:09:E6:86:1D:92:2B:8B:88:F3:FF:08:01:89:DB:46:6E
+                DirName:/C=KR/O=KISTI/CN=KISTI Certification Authority
+                serial:F4:04:FC:2B:16:25:1B:A0
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ca.gridcenter.or.kr/CRL/kisti-ca-v3.crl
+
+            X509v3 Issuer Alternative Name: 
+                email:kisti-grid-ca@kisti.re.kr, URI:http://ca.gridcenter.or.kr/
+            X509v3 Subject Alternative Name: 
+                DNS:cms-t2-se01.sdfarm.kr
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.14305.1.2.1.3.0
+                Policy: 1.2.840.113612.5.2.2.1
+
+    Signature Algorithm: sha256WithRSAEncryption
+         34:59:c0:25:f0:9e:d2:e6:81:01:7d:1d:bb:16:64:2b:94:d3:
+         f1:31:d7:0a:cc:d4:1b:01:56:97:23:c5:c5:c3:29:8b:7b:97:
+         d3:47:ec:b6:05:ba:94:ea:ce:31:88:83:ec:9c:89:f1:16:1f:
+         94:5b:d7:53:e8:e5:02:37:2b:50:35:8a:98:6b:e3:ea:e0:e8:
+         31:d6:9d:db:f4:92:90:a2:01:46:e6:61:7b:f3:cd:4b:6c:76:
+         c9:f3:52:2c:3f:e2:c9:b5:05:16:d6:3a:e7:9c:b2:75:2a:1b:
+         1a:07:2b:bf:1b:b8:b4:3e:cf:28:20:ab:eb:8a:11:fa:14:1f:
+         18:29:51:4d:19:65:82:12:fb:73:60:05:77:76:e0:cb:3f:c9:
+         36:eb:f9:74:a5:35:62:50:2a:61:31:ba:8b:c0:24:da:94:c7:
+         7d:57:bc:d9:10:e1:b4:07:90:15:22:d0:bb:e4:71:12:60:44:
+         f3:33:1f:9a:16:30:b1:94:3e:42:8d:fb:0a:6e:79:6e:40:01:
+         58:4d:ce:54:ce:8c:12:ff:d6:27:59:2c:29:bc:25:80:bf:e1:
+         d5:b3:b8:5d:a0:eb:a3:2a:04:ce:4f:5b:1c:f9:bf:0d:7e:33:
+         0a:b2:62:7b:96:45:8b:70:4a:67:f0:f8:70:a3:26:2e:76:d2:
+         c1:9d:8f:45:de:5d:18:94:79:8d:8a:6e:45:4b:71:49:2c:da:
+         2c:c4:ad:e3:db:5c:44:5c:ab:0a:43:62:74:c4:22:07:26:ba:
+         ba:2e:d3:45:e9:2b:b8:8d:03:43:cd:f9:4a:58:c9:e5:c8:a9:
+         00:ba:52:a5:df:5d:cc:66:89:88:37:b2:94:a4:a3:44:53:29:
+         44:cb:31:2b:37:2e:38:6b:45:1a:c8:f1:8f:73:c8:f0:ae:01:
+         a4:61:97:71:f0:e0:ad:a6:f2:74:28:b5:e6:f7:7e:c1:32:f8:
+         7c:3d:94:d1:26:16:28:78:99:7c:c1:d0:62:b6:f8:e8:b6:94:
+         e2:39:e5:8d:bd:de:9c:32:ca:9a:e4:f6:0a:a0:f3:3a:a1:86:
+         43:15:84:6c:73:5d:c7:cf:22:dd:94:73:48:81:e7:87:c3:34:
+         4f:8f:bb:11:04:16:bf:2b:8e:bb:39:50:7a:7c:25:a2:ed:d3:
+         42:2b:17:13:b8:be:1a:aa:0d:0b:51:78:ad:46:d2:5a:45:0f:
+         e6:98:e4:d8:53:dc:ad:96:9d:1d:11:84:bc:80:64:ed:6f:87:
+         09:b1:f0:0e:1a:11:f0:f0:a6:78:2d:a5:92:2c:7c:29:cb:f6:
+         04:c0:c1:7e:6a:20:5e:5c:e7:3a:53:41:64:33:a3:16:4a:cf:
+         a8:95:c0:5d:75:61:76:e2

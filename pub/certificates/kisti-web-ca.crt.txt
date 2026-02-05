@@ -1,0 +1,62 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 0 (0x0)
+        Signature Algorithm: md5WithRSAEncryption
+        Issuer: C=KR, L=Daejeon, O=KISTI, CN=KISTI GRID Web Server Certification Authority
+        Validity
+            Not Before: May 10 00:25:36 2004 GMT
+            Not After : May  8 00:25:36 2014 GMT
+        Subject: C=KR, L=Daejeon, O=KISTI, CN=KISTI GRID Web Server Certification Authority
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:f1:b4:5f:dc:ac:24:aa:a2:a7:a3:a6:66:a4:4b:
+                    af:fd:68:6d:f0:09:b3:8e:76:3c:c6:d2:e7:58:a8:
+                    46:cf:41:3c:4b:ba:6f:46:46:21:23:26:19:54:47:
+                    6e:7b:7f:0e:a4:d6:4f:2f:ac:c4:87:00:29:cc:02:
+                    34:8d:a3:19:36:d3:d3:db:a6:30:d4:10:7f:7f:80:
+                    d7:5e:c5:5d:78:eb:b0:a8:2e:dc:51:9e:3b:84:cc:
+                    51:49:3a:38:bd:7a:6b:f1:17:4f:f3:88:4a:0a:ba:
+                    df:2e:c2:9b:a7:78:8a:5f:09:62:92:50:c3:0c:73:
+                    d9:1f:da:02:b8:11:a2:f4:e3
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+            C2:CE:68:BD:22:33:D4:8E:8C:DF:66:13:FE:99:BE:51:4E:B7:E5:57
+            X509v3 Authority Key Identifier: 
+            keyid:C2:CE:68:BD:22:33:D4:8E:8C:DF:66:13:FE:99:BE:51:4E:B7:E5:57
+            DirName:/C=KR/L=Daejeon/O=KISTI/CN=KISTI GRID Web Server Certification Authority
+            serial:00
+
+            X509v3 Basic Constraints: 
+            CA:TRUE
+    Signature Algorithm: md5WithRSAEncryption
+        96:34:93:53:38:5b:b2:f2:4c:08:a4:db:66:56:db:9c:68:7c:
+        2f:c5:0c:49:62:02:ac:1d:31:b7:10:b2:fe:80:e0:50:25:42:
+        63:cc:80:74:5e:c7:15:0a:8d:97:ca:04:bd:7b:a1:a3:1e:68:
+        83:b4:b0:e4:c7:57:a0:30:16:4d:c2:57:f9:b1:0e:a2:e1:f4:
+        7c:c7:6a:29:1f:3d:aa:5e:23:30:3f:a9:90:b3:fa:09:d0:3a:
+        41:bd:be:38:b6:8d:59:ff:2d:b7:a9:21:83:df:22:58:90:74:
+        a3:0f:28:bb:2f:02:19:95:66:77:b6:90:51:6b:f2:01:d4:09:
+        3e:73
+-----BEGIN CERTIFICATE-----
+MIIDCTCCAnKgAwIBAgIBADANBgkqhkiG9w0BAQQFADBnMQswCQYDVQQGEwJLUjEQ
+MA4GA1UEBxMHRGFlamVvbjEOMAwGA1UEChMFS0lTVEkxNjA0BgNVBAMTLUtJU1RJ
+IEdSSUQgV2ViIFNlcnZlciBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0wNDA1
+MTAwMDI1MzZaFw0xNDA1MDgwMDI1MzZaMGcxCzAJBgNVBAYTAktSMRAwDgYDVQQH
+EwdEYWVqZW9uMQ4wDAYDVQQKEwVLSVNUSTE2MDQGA1UEAxMtS0lTVEkgR1JJRCBX
+ZWIgU2VydmVyIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIGfMA0GCSqGSIb3DQEB
+AQUAA4GNADCBiQKBgQDxtF/crCSqoqejpmakS6/9aG3wCbOOdjzG0udYqEbPQTxL
+um9GRiEjJhlUR257fw6k1k8vrMSHACnMAjSNoxk209PbpjDUEH9/gNdexV1467Co
+LtxRnjuEzFFJOji9emvxF0/ziEoKut8uwpuneIpfCWKSUMMMc9kf2gK4EaL04wID
+AQABo4HEMIHBMB0GA1UdDgQWBBTCzmi9IjPUjozfZhP+mb5RTrflVzCBkQYDVR0j
+BIGJMIGGgBTCzmi9IjPUjozfZhP+mb5RTrflV6FrpGkwZzELMAkGA1UEBhMCS1Ix
+EDAOBgNVBAcTB0RhZWplb24xDjAMBgNVBAoTBUtJU1RJMTYwNAYDVQQDEy1LSVNU
+SSBHUklEIFdlYiBTZXJ2ZXIgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHmCAQAwDAYD
+VR0TBAUwAwEB/zANBgkqhkiG9w0BAQQFAAOBgQCWNJNTOFuy8kwIpNtmVtucaHwv
+xQxJYgKsHTG3ELL+gOBQJUJjzIB0XscVCo2XygS9e6GjHmiDtLDkx1egMBZNwlf5
+sQ6i4fR8x2opHz2qXiMwP6mQs/oJ0DpBvb44to1Z/y23qSGD3yJYkHSjDyi7LwIZ
+lWZ3tpBRa/IB1Ak+cw==
+-----END CERTIFICATE-----

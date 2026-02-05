@@ -1,0 +1,28 @@
+
+body {
+ font-size:80%;
+ color:#000000;
+ background-color:#aacaaa;
+ margin:10px;
+}
+
+body,p,td,ul,input { font-family:verdana,arial; }
+textarea { font-family:courier; }
+
+table,input,textarea { font-size: 100%; }
+
+a:link    { text-decoration:underline; color:#008800; }
+a:visited { text-decoration:underline; color:#008800; }
+a:hover   { text-decoration:underline; color:#880000; }
+
+a.menu:link    { text-decoration:none; color:#333333; }
+a.menu:visited { text-decoration:none; color:#333333; }
+a.menu:hover   { text-decoration:underline; color:#333333; }
+
+/*
+body,td,pre {
+  color: black;
+  font-family: Verdana,Arial,Helvetica;
+  font-size: x-small;
+}
+*/

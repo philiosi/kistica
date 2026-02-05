@@ -1,0 +1,41 @@
+
+body {
+ font-size:80%;
+ color:#000000;
+ background-color:#f0f0f0;
+ margin:10px;
+}
+
+body,p,td,ul,textarea,input { font-family: verdana,arial; }
+
+table,input,textarea { font-size: 100%; }
+
+a:link    { text-decoration:underline; color:#008800; }
+a:visited { text-decoration:underline; color:#008800; }
+a:hover   { text-decoration:underline; color:#880000; }
+
+a.menu:link    { text-decoration:none; color:#333333; }
+a.menu:visited { text-decoration:none; color:#333333; }
+a.menu:hover   { text-decoration:underline; color:#333333; }
+
+td.menu1 { background:#ccffcc; padding:5 5 5 5px; }
+a.menu1       { display:block; text-align:left; }
+a.menu1:hover { display:block; text-decoration:underline; font-weight:bold; }
+td.menu2 { background:#ccffcc; padding:5 5 5 5px; }
+a.menu2       { display:block; text-align:left; margin:0 0 0 10px; }
+a.menu2:hover { display:block; text-decoration:underline; font-weight:bold; }
+
+table.data { background:#999999; }
+table.data th   { background:#cccccc; width:150px; height:30px; text-align:right; font-weight:normal; }
+table.data td   { background:#eeeeee; width:450px; height:30px; text-align:left; }
+table.data td.c { background:#eeeeee; width:600px; height:30px; text-align:center; font-weight:bold}
+  
+span.red { color:#BF4064; }
+ 
+div.message1 { padding:5 5 5 5px; color:#00AA00; }
+div.message2 { padding:5 5 5 5px; color:#BF4064; font-size:1.2em; font-weight:bold; }
+div.message3 { padding:5 5 5 5px; color:#BF4064; }
+
+input.button { margin-left:10px; }
+label.important { font-size:1.2em; font-weight:bold}
+.important { padding:5 5 5 5px; color:#BF4064;}

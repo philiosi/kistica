@@ -1,0 +1,81 @@
+<?php
+
+  unset($env);
+  $env['prefix'] = '/var/www/html';
+  include("$env[prefix]/include/common_v3.php");
+
+  $env['self'] = $_SERVER['SCRIPT_NAME'];
+
+
+  $env['pagewidth'] = 1000;
+  include("../head.php");
+
+  $title = "Issued Certificates List";
+  ParagraphTitle($title);
+
+  print<<<EOS
+Issuer subject: C=KR, O=KISTI, O=GRID, CN=KISTI Grid Certificate Authority<br>
+<br>
+<table border='0' cellpadding='1' cellspacing='1' width='100%' class='issued'>
+<tr>
+ <td class='a'>Serial<br> No.</td>
+ <td class='a'>Serial<br> No.(hex)</td>
+ <td class='a'>Type</td>
+ <td class='a' colspan='2'>Download</td>
+ <td class='a'>Subject</td>
+ <td class='a'>Valid Until</td>
+ <td class='a'>Detail</td>
+</tr>
+<tr>
+ <td class='a'></td>
+ <td class='a'></td>
+ <td class='a'></td>
+ <td class='a'>pem</td>
+ <td class='a'>crt</td>
+ <td class='a'></td>
+ <td class='a'></td>
+ <td class='a'></td>
+</tr>
+EOS;
+  $qry = "SELECT * FROM cert WHERE status='issued' ORDER BY serial DESC";
+  $ret = mysql_query($qry);
+  print mysql_error();
+
+  while ($row = mysql_fetch_array($ret)) {
+#   print_r($row);
+    $serial = $row['serial'];
+    $serial_h = sprintf("%02x", $serial);
+
+    $subject = $row['subject'];
+    $ctype = $row['ctype'];
+    if ($ctype == 'user') $ctype_s = 'person';
+    else $ctype_s = 'host';
+    $vuntil = $row['vuntil'];
+    $vuntil_s = substr($vuntil, 0, 10);
+    print<<<EOS
+<tr>
+ <td class='b'>$serial</td>
+ <td class='b'>$serial_h</td>
+ <td class='b'>$ctype_s</td>
+ <td class='b'><a href='$serial_h.pem'>pem</a></td>
+ <td class='b'><a href='$serial_h.crt'>crt</a></td>
+ <td class='b'>$subject</td>
+ <td class='b' nowrap>$vuntil_s</td>
+ <td class='b'><a href='$serial_h.txt'>view</a></td>
+</tr>
+EOS;
+  }
+
+  print<<<EOS
+</table>
+EOS;
+
+  print<<<EOS
+<p style="line-height:160%;">
+</p>
+EOS;
+
+
+  include("../tail.php");
+
+?>

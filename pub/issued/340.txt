@@ -1,0 +1,99 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 832 (0x340)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=KR, O=KISTI, O=GRID, CN=KISTI Grid Certificate Authority
+        Validity
+            Not Before: Sep  5 05:02:52 2011 GMT
+            Not After : Sep  4 05:02:52 2012 GMT
+        Subject: C=KR, O=KISTI, O=GRID, O=KISTI, CN=72729829 Tatyana Khan
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:9d:2d:8b:8a:f2:03:0c:e0:8b:1b:1b:e1:73:68:
+                    27:a5:55:da:b4:ea:40:a1:5e:4b:08:a7:43:4f:0e:
+                    c4:74:73:97:91:b9:a5:bf:35:b6:c5:5e:88:0e:a1:
+                    80:d7:c1:82:0f:ea:d1:e3:cb:b8:a0:cb:4c:3a:13:
+                    9b:1d:81:f9:cf:3c:88:a5:4c:d9:eb:21:b3:3b:30:
+                    6c:6f:ff:7a:d6:56:92:79:ce:7f:0d:4b:e9:21:8b:
+                    b3:cd:29:cc:34:cf:ab:67:ab:1d:38:e6:14:54:9e:
+                    1c:a0:dc:ac:97:8c:b1:34:f3:9b:32:eb:d6:aa:3a:
+                    49:fa:e0:07:78:d8:78:51:fb:56:68:1e:80:da:57:
+                    82:d1:b1:3e:9c:f6:0c:35:91:ba:d3:d0:19:f4:d4:
+                    ca:80:0b:26:39:eb:ec:c8:37:96:66:07:a0:83:45:
+                    9e:e1:d9:2a:1e:27:06:32:6a:34:c5:24:c9:9b:ab:
+                    e5:46:b6:43:6b:ad:cf:af:34:d0:c1:7c:cc:5b:bc:
+                    72:b0:bb:13:13:7d:49:33:f9:67:42:d3:c8:fd:41:
+                    87:82:c2:bc:aa:3b:ee:b9:3d:5f:8e:5e:4b:24:76:
+                    0d:99:87:f4:ef:6b:7c:1f:25:58:10:f2:5a:b2:ae:
+                    2d:a8:e0:1a:b3:61:95:ef:ab:a3:36:2c:0e:02:3c:
+                    13:67
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Subject Key Identifier: 
+                F4:28:72:0A:F7:78:70:C3:37:56:23:F1:A7:66:60:B6:1A:1F:0C:5A
+            X509v3 Authority Key Identifier: 
+                keyid:60:23:F8:5A:1A:BD:43:46:AE:F2:A6:A9:51:37:4C:DA:1A:1D:5F:30
+                DirName:/C=KR/O=KISTI/O=GRID/CN=KISTI Grid Certificate Authority
+                serial:00
+
+            X509v3 CRL Distribution Points: 
+                URI:http://ca.gridcenter.or.kr/CRL/722e5071.crl
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@gridcenter.or.kr, URI:http://ca.gridcenter.or.kr/
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.14305.1.1.1.2.0
+                Policy: 1.2.840.113612.5.2.2.1
+
+    Signature Algorithm: sha1WithRSAEncryption
+        50:92:69:20:6a:7d:43:9b:d4:76:89:26:c2:25:f7:a5:ec:91:
+        7b:6f:63:79:d3:3d:88:75:71:de:38:3f:8c:a1:18:bc:05:2a:
+        66:21:e6:aa:59:c1:64:46:4b:17:a1:8e:89:0a:f9:75:39:72:
+        01:25:6f:7b:05:93:74:1b:fa:93:fa:00:38:fe:da:03:96:6f:
+        23:a3:4c:98:bb:1e:e8:a9:f6:90:39:a0:bd:d7:a3:8c:79:6a:
+        0b:c5:c1:5c:8b:73:56:47:67:16:4a:6f:a2:e2:36:3e:ca:6c:
+        36:8c:b4:99:f2:57:dd:af:5d:57:c7:17:66:e5:e7:54:7b:60:
+        16:41:e6:dd:ca:53:ee:41:3c:9e:37:f4:11:49:ab:dd:9f:0a:
+        ee:35:63:b0:ba:cc:23:ed:c8:f9:b2:6f:ef:67:4c:a4:a8:20:
+        f2:92:14:ec:34:58:df:c4:99:83:9c:9d:5a:e7:85:ce:42:5a:
+        cb:ce:8e:59:d7:c5:06:2c:a2:ba:29:ca:24:bc:e4:2a:67:a6:
+        ee:33:2a:91:75:59:b3:62:ab:82:22:8c:90:3f:94:7c:3e:4c:
+        18:62:0b:68:be:0c:ab:b4:c7:2e:a6:fa:68:38:8c:2e:74:6f:
+        cc:30:1e:be:27:99:85:9b:8f:91:e0:57:83:22:b6:d0:24:bf:
+        38:63:2d:82
+-----BEGIN CERTIFICATE-----
+MIIErDCCA5SgAwIBAgICA0AwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMCS1Ix
+DjAMBgNVBAoTBUtJU1RJMQ0wCwYDVQQKEwRHUklEMSkwJwYDVQQDEyBLSVNUSSBH
+cmlkIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0xMTA5MDUwNTAyNTJaFw0xMjA5
+MDQwNTAyNTJaMFwxCzAJBgNVBAYTAktSMQ4wDAYDVQQKEwVLSVNUSTENMAsGA1UE
+ChMER1JJRDEOMAwGA1UEChMFS0lTVEkxHjAcBgNVBAMTFTcyNzI5ODI5IFRhdHlh
+bmEgS2hhbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ0ti4ryAwzg
+ixsb4XNoJ6VV2rTqQKFeSwinQ08OxHRzl5G5pb81tsVeiA6hgNfBgg/q0ePLuKDL
+TDoTmx2B+c88iKVM2eshszswbG//etZWknnOfw1L6SGLs80pzDTPq2erHTjmFFSe
+HKDcrJeMsTTzmzLr1qo6SfrgB3jYeFH7VmgegNpXgtGxPpz2DDWRutPQGfTUyoAL
+Jjnr7Mg3lmYHoINFnuHZKh4nBjJqNMUkyZur5Ua2Q2utz6800MF8zFu8crC7ExN9
+STP5Z0LTyP1Bh4LCvKo77rk9X45eSyR2DZmH9O9rfB8lWBDyWrKuLajgGrNhle+r
+ozYsDgI8E2cCAwEAAaOCAXswggF3MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD
+AgTwMBMGA1UdJQQMMAoGCCsGAQUFBwMCMB0GA1UdDgQWBBT0KHIK93hwwzdWI/Gn
+ZmC2Gh8MWjB/BgNVHSMEeDB2gBRgI/haGr1DRq7ypqlRN0zaGh1fMKFbpFkwVzEL
+MAkGA1UEBhMCS1IxDjAMBgNVBAoTBUtJU1RJMQ0wCwYDVQQKEwRHUklEMSkwJwYD
+VQQDEyBLSVNUSSBHcmlkIENlcnRpZmljYXRlIEF1dGhvcml0eYIBADA8BgNVHR8E
+NTAzMDGgL6AthitodHRwOi8vY2EuZ3JpZGNlbnRlci5vci5rci9DUkwvNzIyZTUw
+NzEuY3JsMDsGA1UdEgQ0MDKBE2NhQGdyaWRjZW50ZXIub3Iua3KGG2h0dHA6Ly9j
+YS5ncmlkY2VudGVyLm9yLmtyLzAnBgNVHSAEIDAeMA4GDCsGAQQB72EBAQECADAM
+BgoqhkiG90wFAgIBMA0GCSqGSIb3DQEBBQUAA4IBAQBQkmkgan1Dm9R2iSbCJfel
+7JF7b2N50z2IdXHeOD+MoRi8BSpmIeaqWcFkRksXoY6JCvl1OXIBJW97BZN0G/qT
++gA4/toDlm8jo0yYux7oqfaQOaC916OMeWoLxcFci3NWR2cWSm+i4jY+ymw2jLSZ
+8lfdr11Xxxdm5edUe2AWQebdylPuQTyeN/QRSavdnwruNWOwuswj7cj5sm/vZ0yk
+qCDykhTsNFjfxJmDnJ1a54XOQlrLzo5Z18UGLKK6KcokvOQqZ6buMyqRdVmzYquC
+IoyQP5R8PkwYYgtovgyrtMcupvpoOIwudG/MMB6+J5mFm4+R4FeDIrbQJL84Yy2C
+-----END CERTIFICATE-----

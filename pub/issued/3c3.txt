@@ -1,0 +1,91 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 963 (0x3c3)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=KR, O=KISTI, O=GRID, CN=KISTI Grid Certificate Authority
+        Validity
+            Not Before: Aug  8 00:34:13 2012 GMT
+            Not After : Aug  8 00:34:13 2013 GMT
+        Subject: C=KR, O=KISTI, O=GRID, O=KISTI, CN=host/afmaster01.sdfarm.kr
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:b4:07:72:de:15:21:c7:5b:18:ea:ac:15:cb:e6:
+                    ac:98:9c:92:b5:52:d7:98:ee:de:b6:40:14:d8:d9:
+                    34:d2:bf:62:ee:c7:82:17:f7:f3:de:d3:a1:8e:64:
+                    fd:92:c1:bb:a5:19:d9:5d:20:79:26:70:e7:ba:1d:
+                    a8:b1:36:5e:ac:fa:0a:7b:19:1a:25:7d:62:78:35:
+                    e1:a3:12:09:7e:f4:35:5b:4f:a3:d6:80:ec:61:40:
+                    7e:28:34:87:a5:93:dd:45:86:89:2b:47:1d:70:0b:
+                    98:bc:b8:87:46:a0:cd:c7:19:a6:27:fe:34:b9:6d:
+                    64:b8:9d:85:79:7c:00:0c:9f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment, Data Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Key Identifier: 
+                E2:1B:DC:0B:B8:A8:CC:90:9F:FE:2C:BD:C4:F8:C5:86:78:55:CA:AD
+            X509v3 Authority Key Identifier: 
+                keyid:60:23:F8:5A:1A:BD:43:46:AE:F2:A6:A9:51:37:4C:DA:1A:1D:5F:30
+                DirName:/C=KR/O=KISTI/O=GRID/CN=KISTI Grid Certificate Authority
+                serial:00
+
+            X509v3 CRL Distribution Points: 
+                URI:http://ca.gridcenter.or.kr/CRL/722e5071.crl
+
+            X509v3 Issuer Alternative Name: 
+                email:ca@gridcenter.or.kr, URI:http://ca.gridcenter.or.kr/
+            X509v3 Subject Alternative Name: 
+                DNS:afmaster01.sdfarm.kr
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.14305.1.1.1.2.0
+                Policy: 1.2.840.113612.5.2.2.1
+
+    Signature Algorithm: sha1WithRSAEncryption
+        01:e4:7f:66:2c:39:9f:23:61:df:9a:1b:69:df:f1:26:d8:13:
+        1b:a3:22:36:42:bf:f7:89:37:af:29:b8:0e:61:00:fb:6e:be:
+        c5:d5:89:d7:f1:c3:91:9a:93:c1:41:9c:5d:1f:ea:9d:53:2e:
+        9a:b9:14:49:e6:81:fc:77:c1:9f:7a:6f:70:a9:a6:04:23:98:
+        20:0e:c1:2d:ab:e8:1a:f3:34:89:74:f0:b4:a2:02:eb:98:af:
+        32:c4:30:06:49:c0:ad:db:23:07:5f:a0:1e:33:70:c0:8f:a0:
+        5c:c9:02:c4:2c:d3:e3:41:29:75:50:49:60:0b:44:fd:e4:30:
+        05:b8:a4:8d:3d:da:0a:8f:ff:d6:9f:71:e5:64:74:f6:07:a0:
+        b2:c5:14:6b:a9:1b:53:6a:e0:4f:00:2a:51:3f:4a:5f:16:32:
+        3d:f5:d5:c9:38:99:09:78:a5:3b:6c:38:4d:ac:77:53:1f:be:
+        9f:55:b4:fc:0e:f0:05:8c:11:f4:16:58:fa:7b:ed:02:35:14:
+        33:f2:69:54:ab:c9:e2:bd:d5:ae:fe:cc:64:29:6b:16:c0:04:
+        06:16:c2:c9:90:2c:e8:05:0b:85:fe:6e:92:59:5b:41:20:8e:
+        9f:1e:6f:7b:5d:22:fc:b5:c9:cd:7d:dc:ba:f1:e7:96:fb:7b:
+        ef:21:7f:db
+-----BEGIN CERTIFICATE-----
+MIIEVzCCAz+gAwIBAgICA8MwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMCS1Ix
+DjAMBgNVBAoTBUtJU1RJMQ0wCwYDVQQKEwRHUklEMSkwJwYDVQQDEyBLSVNUSSBH
+cmlkIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0xMjA4MDgwMDM0MTNaFw0xMzA4
+MDgwMDM0MTNaMGAxCzAJBgNVBAYTAktSMQ4wDAYDVQQKEwVLSVNUSTENMAsGA1UE
+ChMER1JJRDEOMAwGA1UEChMFS0lTVEkxIjAgBgNVBAMTGWhvc3QvYWZtYXN0ZXIw
+MS5zZGZhcm0ua3IwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALQHct4VIcdb
+GOqsFcvmrJickrVS15ju3rZAFNjZNNK/Yu7Hghf3897ToY5k/ZLBu6UZ2V0geSZw
+57odqLE2Xqz6CnsZGiV9Yng14aMSCX70NVtPo9aA7GFAfig0h6WT3UWGiStHHXAL
+mLy4h0agzccZpif+NLltZLidhXl8AAyfAgMBAAGjggGmMIIBojAMBgNVHRMBAf8E
+AjAAMA4GA1UdDwEB/wQEAwIEsDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
+AwIwHQYDVR0OBBYEFOIb3Au4qMyQn/4svcT4xYZ4VcqtMH8GA1UdIwR4MHaAFGAj
++FoavUNGrvKmqVE3TNoaHV8woVukWTBXMQswCQYDVQQGEwJLUjEOMAwGA1UEChMF
+S0lTVEkxDTALBgNVBAoTBEdSSUQxKTAnBgNVBAMTIEtJU1RJIEdyaWQgQ2VydGlm
+aWNhdGUgQXV0aG9yaXR5ggEAMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jYS5n
+cmlkY2VudGVyLm9yLmtyL0NSTC83MjJlNTA3MS5jcmwwOwYDVR0SBDQwMoETY2FA
+Z3JpZGNlbnRlci5vci5rcoYbaHR0cDovL2NhLmdyaWRjZW50ZXIub3Iua3IvMB8G
+A1UdEQQYMBaCFGFmbWFzdGVyMDEuc2RmYXJtLmtyMCcGA1UdIAQgMB4wDgYMKwYB
+BAHvYQEBAQIAMAwGCiqGSIb3TAUCAgEwDQYJKoZIhvcNAQEFBQADggEBAAHkf2Ys
+OZ8jYd+aG2nf8SbYExujIjZCv/eJN68puA5hAPtuvsXVidfxw5Gak8FBnF0f6p1T
+Lpq5FEnmgfx3wZ96b3CppgQjmCAOwS2r6BrzNIl08LSiAuuYrzLEMAZJwK3bIwdf
+oB4zcMCPoFzJAsQs0+NBKXVQSWALRP3kMAW4pI092gqP/9afceVkdPYHoLLFFGup
+G1Nq4E8AKlE/Sl8WMj311ck4mQl4pTtsOE2sd1Mfvp9VtPwO8AWMEfQWWPp77QI1
+FDPyaVSryeK91a7+zGQpaxbABAYWwsmQLOgFC4X+bpJZW0Egjp8eb3tdIvy1yc19
+3Lrx55b7e+8hf9s=
+-----END CERTIFICATE-----

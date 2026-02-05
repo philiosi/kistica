@@ -1,0 +1,223 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<title>KISTI Grid Certificate Authority CPS</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+<style type='text/css'>
+a:link    { text-decoration:none; color:#660000; }
+a:visited { text-decoration:none; color:#660000; }
+a:hover   { text-decoration:underline; color:#333333; }
+body,td,pre {
+color: black;
+font-family: Arial,Verdana,Helvetica;
+font-size: x-small;
+}
+</style>
+<style>
+p.L1  { margin-top:10px; margin-bottom:10px; font-size:14pt; font-weight:bold;  }
+p.L2  { margin-top:10px; margin-bottom:10px; font-size:12pt; font-weight:bold;  }
+p.L3  { margin-top:10px; margin-bottom:10px; font-size:10pt; font-weight:bold;  }
+p.text { }
+ul.order { margin:5 0 5 20px; }
+</style>
+</head>
+<body>
+<center>
+<font size='+1'>
+<b>Asia Pacific Grid Minimum CA Requirements</b>
+</font>
+<br/>
+<br/>
+version 1.2<br>
+July 4, 2006<br>
+</center>
+
+
+</ul>
+<p class='L1'>1 Introduction</p>
+<p class='text'>
+The Asia Pacific Grid Policy Management Authority (hereafter called APGrid PMA) provides the minimum requirements for traditional online PKI CAs.  The PMA specifies two levels of the minimum requirements, one is for experimental CAs and the other is for production CAs.  An experimental CA is considered as an alternative of the Globus CA and it will be accepted within Asia for experimental use.  For production runs and international collaboration, any CA must satisfy the minimum requirements for production CAs.
+</p><p class='text'>
+In this document, the key words "must", "must not", "required", "shall", "shall not", "should", "should not", "recommended", "may", and "optional" are to be interpreted as described in RFC 2119.
+</p><p class='text'>
+The minimum requirements for Production CA are based on "Profile for Traditional X.509 Public Key Certification Authorities with secured infrastructure Version 4.0" which is an Authentication Profile of the International Grid Trust Federation describing the minimum requirements on traditional X.509 PKI CAs.  The Authentication Profile is managed by the European Grid Policy Management Authority and available from the EUGrid PMA web site at: http://www.eugridpma.org/.
+</p>
+
+<p class='L1'>2 Minimum CA Requirements for Production CA</p>
+<p class='L2'>2.1 Certification Authority</p>
+<p class='L3'>1. CP/CPS</p>
+<ul class='order'>
+<li>Every CA must have a CP/CPS
+<li>Every CA must assign its CP/CPS an O.I.D.
+<li>Whenever there is a change in the CP/CPS the O.I.D. of the document must change and the major changes must be announced to the APGrid PMA and approved before signing any certificates under the new CP/CPS.
+<li>The CP/CPS must be available online such as web.
+</ul>
+<p class='L3'>2. CA System</p>
+<ul class='order'>
+<li>The CA system must be a dedicated machine.
+<li>The CA system must be located in a secure environment where access is controlled.
+<li>The CA system must be professionally managed.
+<li>The CA system must be off line or use at least a FIPS 140-2 level 3 Hardware Security Module or equivalent to protect the private key of CA.
+<li>The secure environment must be documented that are available to the PMA.
+</ul>
+<p class='L3'>3. CA Key</p>
+<ul class='order'>
+<li>The CA key must have a minimum length of 2048 bits
+<li>The private key of every CA must be protected with a pass phrase of at least 15 elements.
+<li>The pass phrase must be known by specific personnel of the CA.
+<li>Copies of the encrypted private key must be kept on offline mediums in secure places where access is controlled.
+</ul>
+<p class='L3'>4. CA Certificate</p>
+<ul class='order'>
+<li>Lifetime of the CA certificate must be no longer than 20 years.
+<li>Lifetime of the CA certificate must be no less than two times of the maximum life time of an end entity certificate.
+<li>The CA certificate must have the extensions keyUsage and basicConstraints marked as critical.
+<li>Value of x509 Basic Constraints must be CA:TRUE
+<li> Value of x509 Key Usage must include at least
+<li>keyCertSign, cRLSign
+</ul>
+<p class='L3'>5. CA Namespace</p>
+<ul class='order'>
+<li>Each CA must only assign a namespace that does not clash with any other CA.
+</ul>
+<p class='L3'>6. Certificate Revocation</p>
+<ul class='order'>
+<li>Certificate revocation can be requested by users, the registration authorities, and the CA.
+<li>The revocation request must be sent via a secure method such as signed email.
+<li>End entity must request revocation of its certificate if
+<li>he lost or compromised the private key.
+<li>the data in the certificate are no longer valid.
+<li>Revocation requests must be properly authenticated.
+</ul>
+<p class='L3'>7. Certificate Revocation List (CRL)</p>
+<ul class='order'>
+<li>Every CA must generate CRLs.
+<li>The CRL lifetime must be no more than 30 days.
+<li>Every CA must issue a new CRL at least 7 days before expiration.
+<li>Every CA must issue a new CRL immediately after a revocation.
+<li>The signed CRL must be published in a repository at least accessible via a Web.
+<li>The repository must be run at least on a best-effort basis, with an intended availability of 24x7.
+<li>The CRLs must be compliant with RFC3280, and can be either version 1 or version 2.
+<li>The message digests of the certificates and CRLs must be generated by a trustworthy mechanism, like SHA1 (in particular, MD5 must not be used).
+</ul>
+<p class='L3'>8. End Entity Certificates and keys</p>
+<ul class='order'>
+<li>The user key and the host key must have a minimum length of 1024 bits.
+<li>Lifetime of the user certificate and the host certificate must be no longer than 13 months.
+<li>Any user certificates must not be shared.
+<li>Each host certificate must be linked to a single network entity.
+<li>Every user must generate his private key and must keep this private and secure.
+<li>Every CA should make a reasonable effort to make sure that end-entities realize the importance of properly protecting their private data.  It's upon the user to protect user's private key with a pass phrase at least 12 characters long.  It's also upon the user to protect host's and service's private keys by secure method if  they are not protected by a pass phrase. 
+<li>The end-entity certificates must be in X.509v3 format and compliant with RFC3280 unless explicitly stated otherwise. In the certificate extensions:
+<li>a Policy Identifier must be included and must contain an OID and an OID only
+<li>CRLDistributionPoints must be included and contain at least one http URL
+<li>keyUsage must be included and marked as critical
+<li>basicConstraints should be included, and when included it must be set to 'CA: false' and marked as critical
+<li>if an OCSP responder, operated as a production service by the issuing CA, is available, AuthorityInfoAccess must be included and contain at least one URI
+<li>for certificates bound to network entities, a FQDN shall be included as a dnsName in the SubjectAlternativeName
+<li>If a commonName component is used as part of the subject DN, it should contain an appropriate presentation of the actual name of the end-entity.
+</ul>
+<p class='L3'>9. Records Archival</p>
+<ul class='order'>
+<li>Every CA must record and archive all requests for certificates, along with all the issued certificates, all the request for revocation, all the issued CRLs and the login/logout/reboot of the issuing machine.
+<li>These records must be available to external auditors in the course of their work as auditor.
+<li>These records must be kept at least three years.
+</ul>
+<p class='L3'>10. Audits</p>
+<ul class='order'>
+<li>Each CA must accept being audited by other accredited CAs to verify its compliance with the rules and procedures specified in its CP/CPS document.
+<li>Every CA must perform operational audits of the CA/RA staff at least once per year.
+</ul>
+<p class='L3'>11. Publication and Repository responsibilities</p>
+<ul class='order'>
+<li>Each authority must publish for their subscribers, relying parties and for the benefit of distribution by the PMA and the federation
+<li>a CA root certificate or set of CA root certificates up to a self-signed root;
+<li>a http or https URL of the PEM-formatted CA certificate;
+<li>a http URL of the PEM or DER formatted CRL;
+<li>a http or https URL of the web page of the CA for general information; 
+<li>the CP and/or CPS documents;
+<li>an official contact email address for inquiries and fault reporting
+<li>a physical of postal contact address
+<li>The originating authority must grant to the PMA and the Federation ? by virtue of its accreditation ? the right of unlimited re-distribution of this information.
+</ul>
+<p class='L3'>12. Privacy and confidentiality</p>
+<ul class='order'>
+<li>Accredited CAs must define a privacy and data release policy compliant with the relevant national legislation. The CA is responsible for recording, at the time of validation, sufficient information regarding the subscribers to identify the subscriber. The CA is not required to release such information unless provided by a valid legal request according to national laws applicable to that CA.
+</ul>
+<p class='L3'>13. Compromise and disaster recovery</p>
+<ul class='order'>
+<li>The CA must have an adequate compromise and disaster recovery procedure, and we willing to discuss this procedure in the PMA. The procedure need not be disclosed in the policy and practice statements.
+</ul>
+<p class='L2'>2.2  Registration Authority</p>
+<p class='L3'>1. Entity Identification</p>
+<ul class='order'>
+<li>In order for an RA to validate the identity of a person, the subject must contact the RA personally and present photo-id and/or valid official documents showing that the subject is an acceptable end entity as defined in the CP/CPS document of the CA.
+<li>In case of host or service certificate requests, the CSR must be delivered to the RA by the person in charge of the specific entities using a secure method.
+</ul>
+<p class='L3'>2. Name Uniqueness</p>
+<ul class='order'>
+<li>The subject name listed in a certificate must be unambiguous and unique for all certificates issued to the same entity by the CA.
+</ul>
+<p class='L3'>3. RA to CA communications</p>
+<ul class='order'>
+<li>The RA must communicate with the CA with secure methods that are clearly defined in the CP/CPS.  (e.g. signed emails, voice conversations with a known person, or some other acceptable method)
+</ul>
+<p class='L3'>4. Records and Archival</p>
+<ul class='order'>
+<li>The RA must record and archive all requests and confirmations.
+
+</ul>
+<p class='L1'>3 Minimum CA Requirements for Experimental CA</p>
+<p class='L2'>3.1  Certification Authority</p>
+<p class='L3'>1. CA System</p>
+<ul class='order'>
+<li>The CA system must be a dedicated machine.
+<li>The CA system must be located in a secure environment where access is controlled.
+<li>The CA system must be professionally managed.
+</ul>
+<p class='L3'>2. CA Key</p>
+<ul class='order'>
+<li>The CA key must have a minimum length of 1024 bits
+<li>The pass phrase must be known by specific personnel of the CA.
+</ul>
+<p class='L3'>3. CA Certificate</p>
+<ul class='order'>
+<li>Lifetime of the CA certificates must be no longer than 5 years.
+</ul>
+<p class='L3'>4. CA Namespace</p>
+<ul class='order'>
+<li>Each CA must only assign a namespace that does not clash with any other CA.
+</ul>
+<p class='L3'>5. Certificate Revocation</p>
+<ul class='order'>
+<li>Certificate revocation can be requested by users or the registration authorities.
+<li>End entity must request revocation of its certificate if
+<li>he lost or compromised the private key.
+<li>he left organization
+</ul>
+<p class='L3'>6. Certificate Revocation List (CRL)</p>
+<ul class='order'>
+<li>Every CA must generate CRLs.
+<li>The CRL lifetime must be no more than 90 days.
+<li>Every CA must issue a new CRL immediately after a revocation.
+<li>The CRLs must be published in a repository at least accessible via a Web.
+<li>The repository must be run at least on a best-effort basis, with an intended availability of 24x7.
+</ul>
+<p class='L3'>7. End Entity Certificates and keys</p>
+<ul class='order'>
+<li>The user key and the host key must have a minimum length of 1024 bits.
+<li>Lifetime of the user certificate and the host certificate must be no longer than 1 year.
+<li>Each host certificate must be linked to a single network entity.
+<li>Every user must generate his private key and must keep this private and secure.
+</ul>
+<p class='L2'>3.2  Registration Authority</p>
+<p class='L3'>1. Entity Identification</p>
+<ul class='order'>
+<li>The RA can validate the identity by any method which is described in CP/CPS.
+</ul>
+<p class='L3'>2. Name Uniqueness</p>
+<ul class='order'>
+<li>The subject name listed in a certificate must be unambiguous and unique for all certificates issued to the same entity by the CA.
+</body>
+</html>
