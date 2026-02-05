@@ -1,5 +1,0 @@
-# EACL entry #1 
-access_id_CA X509 '/C=KR/O=Globus/CN=KISTI Supercomputing Center CA'
-pos_rights globus CA:sign
-cond_subjects globus '"/C=KR/O=Globus/*" "/O=Grid/O=Globus/*"' 
-
